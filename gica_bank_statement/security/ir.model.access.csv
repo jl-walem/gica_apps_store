@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gica_bank_statement_user,gica.bank.statement.user,model_gica_bank_statement,account.group_account_user,1,1,1,1
+access_gica_bank_statement_line_user,gica.bank.statement.line.user,model_gica_bank_statement_line,account.group_account_user,1,1,1,1
+access_gica_open_items_wizard_user,gica.open.items.wizard.user,model_gica_open_items_wizard,account.group_account_user,1,1,1,1
+access_gica_open_items_wizard_line_user,gica.open.items.wizard.line.user,model_gica_open_items_wizard_line,account.group_account_user,1,1,1,1

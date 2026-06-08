@@ -1,0 +1,353 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gica_bank_statement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-22 15:15+0000\n"
+"PO-Revision-Date: 2026-05-22 15:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement_line.py:0
+#: code:addons/models/bank_statement_line.py:0
+#, python-format
+msgid "A document requires a partner."
+msgstr "Een document vereist een partner."
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement_line.py:0
+#: code:addons/models/bank_statement_line.py:0
+#, python-format
+msgid "A partner is only allowed with a customer or supplier account."
+msgstr "Een partner is enkel toegestaan met een klanten- of leveranciersrekening."
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__account_id
+msgid "Account"
+msgstr "Rekening"
+
+#. module: gica_bank_statement
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_open_items_wizard_form
+msgid "Add"
+msgstr "Toevoegen"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__amount
+msgid "Amount"
+msgstr "Bedrag"
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement.py:0
+#: code:addons/models/bank_statement.py:0
+#, python-format
+msgid "An Odoo journal entry already exists."
+msgstr "Er bestaat al een Odoo boekingsstuk."
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__journal_id
+msgid "Bank Journal"
+msgstr "Bankdagboek"
+
+#. module: gica_bank_statement
+#: model:ir.actions.act_window,name:gica_bank_statement.action_gica_bank_statement
+#: model:ir.ui.menu,name:gica_bank_statement.menu_gica_bank_statement
+msgid "Bank Statements"
+msgstr "Bankuittreksels"
+
+#. module: gica_bank_statement
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_open_items_wizard_form
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__balance_computed
+msgid "Computed Balance"
+msgstr "Berekend saldo"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__create_uid
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__create_uid
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__create_uid
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__create_date
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__create_date
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__create_date
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__currency_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__currency_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__currency_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__date
+msgid "Date"
+msgstr "Datum"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__balance_difference
+msgid "Difference"
+msgstr "Verschil"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__display_name
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__display_name
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__display_name
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__move_line_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__move_line_id
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_bank_statement_form
+msgid "Document"
+msgstr "Document"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields.selection,name:gica_bank_statement.selection__gica_bank_statement__state__draft
+msgid "Draft"
+msgstr "Concept"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__balance_end
+msgid "Entered Closing Balance"
+msgstr "Ingegeven eindsaldo"
+
+#. module: gica_bank_statement
+#: model:ir.ui.menu,name:gica_bank_statement.menu_gica_bank_root
+msgid "GICA"
+msgstr "GICA"
+
+#. module: gica_bank_statement
+#: model:ir.model,name:gica_bank_statement.model_gica_bank_statement
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_bank_statement_form
+msgid "GICA Bank Statement"
+msgstr "GICA bankuittreksel"
+
+#. module: gica_bank_statement
+#: model:ir.model,name:gica_bank_statement.model_gica_bank_statement_line
+msgid "GICA Bank Statement Line"
+msgstr "GICA bankuittreksellijn"
+
+#. module: gica_bank_statement
+#: model:ir.model,name:gica_bank_statement.model_gica_open_items_wizard
+msgid "GICA Open Items Wizard"
+msgstr "GICA assistent open documenten"
+
+#. module: gica_bank_statement
+#: model:ir.model,name:gica_bank_statement.model_gica_open_items_wizard_line
+msgid "GICA Open Items Wizard Line"
+msgstr "GICA assistentlijn open documenten"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__id
+msgid "ID"
+msgstr ""
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__odoo_move_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__move_name
+msgid "Journal Entry"
+msgstr "Boekingsstuk"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__label
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__name
+msgid "Label"
+msgstr "Omschrijving"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__write_uid
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__write_uid
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__write_uid
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__write_date
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__write_date
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__write_date
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__line_ids
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_bank_statement_form
+msgid "Lines"
+msgstr "Lijnen"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__amount_residual
+msgid "Open Amount"
+msgstr "Open bedrag"
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement.py:0
+#: code:addons/models/bank_statement.py:0
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__wizard_line_ids
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_bank_statement_form
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_open_items_wizard_form
+#, python-format
+msgid "Open Documents"
+msgstr "Openstaande documenten"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__balance_start
+msgid "Opening Balance"
+msgstr "Beginsaldo"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__partner_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__selected
+msgid "Selected"
+msgstr "Selectie"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__selected_total
+msgid "Selected Total"
+msgstr "Geselecteerd totaal"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement_line__statement_id
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard__statement_id
+msgid "Statement"
+msgstr "Uittreksel"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__date
+msgid "Statement Date"
+msgstr "Datum uittreksel"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__name
+msgid "Statement No"
+msgstr "Uittreksel nr."
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__state
+msgid "Statut"
+msgstr ""
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement.py:0
+#: code:addons/models/bank_statement.py:0
+#, python-format
+msgid "The closing balance does not match."
+msgstr "Het eindsaldo stemt niet overeen."
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,help:gica_bank_statement.field_gica_bank_statement__currency_id
+#: model:ir.model.fields,help:gica_bank_statement.field_gica_bank_statement_line__currency_id
+#: model:ir.model.fields,help:gica_bank_statement.field_gica_open_items_wizard__currency_id
+#: model:ir.model.fields,help:gica_bank_statement.field_gica_open_items_wizard_line__currency_id
+msgid "The currency used to enter statement"
+msgstr "De valuta gebruikt voor het invoeren van het uittreksel"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,help:gica_bank_statement.field_gica_open_items_wizard_line__amount_residual
+msgid ""
+"The residual amount on a journal item expressed in the company currency."
+msgstr ""
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement_line.py:0
+#: code:addons/models/bank_statement_line.py:0
+#, python-format
+msgid "The selected document does not belong to the selected partner."
+msgstr "Het geselecteerde document behoort niet tot de geselecteerde partner."
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement_line.py:0
+#: code:addons/models/bank_statement_line.py:0
+#, python-format
+msgid "This partner is both customer and supplier. Please select the customer or supplier account."
+msgstr "Deze partner is zowel klant als leverancier. Kies de klanten- of leveranciersrekening."
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__total_credit
+msgid "Total Credit"
+msgstr "Totaal credit"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_bank_statement__total_debit
+msgid "Total Debit"
+msgstr "Totaal debet"
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement.py:0
+#: code:addons/models/bank_statement.py:0
+#, python-format
+msgid "Unable to determine the account."
+msgstr "Kan de rekening niet bepalen."
+
+#. module: gica_bank_statement
+#: model_terms:ir.ui.view,arch_db:gica_bank_statement.view_gica_bank_statement_form
+msgid "Validate"
+msgstr "Valideren"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields.selection,name:gica_bank_statement.selection__gica_bank_statement__state__validated
+msgid "Validated"
+msgstr "Gevalideerd"
+
+#. module: gica_bank_statement
+#: model:ir.model.fields,field_description:gica_bank_statement.field_gica_open_items_wizard_line__wizard_id
+msgid "Wizard"
+msgstr "Assistent"
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement_line.py:0
+#: code:addons/models/bank_statement_line.py:0
+#, python-format
+msgid "You cannot select both a partner and an account."
+msgstr "U kunt niet tegelijk een partner en een rekening kiezen."
+
+#. module: gica_bank_statement
+#. odoo-python
+#: code:addons/gica_bank_statement/models/bank_statement_line.py:0
+#: code:addons/models/bank_statement_line.py:0
+#, python-format
+msgid "You must select a customer/supplier account or a document."
+msgstr "U moet een klanten-/leveranciersrekening of een document kiezen."

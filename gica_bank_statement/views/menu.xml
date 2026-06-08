@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menu principal -->
+    <menuitem
+        id="menu_gica_bank_root"
+        name="GICA"
+        parent="account.menu_finance"
+        sequence="90"
+    />
+
+    <!-- Menu extraits -->
+    <menuitem
+        id="menu_gica_bank_statement"
+        name="Bank Statements"
+        parent="menu_gica_bank_root"
+        action="action_gica_bank_statement"
+        sequence="10"
+    />
+
+</odoo>
