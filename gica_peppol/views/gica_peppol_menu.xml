@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_gica_peppol_sale" model="ir.actions.act_window">
+        <field name="name">Peppol Sales</field>
+        <field name="res_model">gica.peppol.sale</field>
+        <field name="view_mode">tree,form</field>
+	<field name="search_view_id" ref="view_gica_peppol_sale_search"/>
+    </record>
+
+    <menuitem id="menu_gica_peppol_root"
+              name="Peppol"
+              parent="gica_bank_statement.menu_gica_bank_root"
+              sequence="20"/>
+
+    <menuitem id="menu_gica_peppol_sales"
+              name="Peppol Sales"
+              parent="menu_gica_peppol_root"
+              action="action_gica_peppol_sale"
+              sequence="10"/>
+              
+    <record id="action_gica_peppol_purchase" model="ir.actions.act_window">
+        <field name="name">Peppol Purchases</field>
+        <field name="res_model">gica.peppol.purchase</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_gica_peppol_purchase_search"/>
+    </record>
+
+    <menuitem id="menu_gica_peppol_purchases"
+              name="Peppol Purchases"
+              parent="menu_gica_peppol_root"
+              action="action_gica_peppol_purchase"
+              sequence="20"/>
+</odoo>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_gica_peppol_generate_xml" model="ir.actions.server">
+        <field name="name">Generate XML</field>
+	<field name="sequence">10</field>
+        <field name="model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_generate_xml()
+        </field>
+    </record>
+
+    <record id="action_gica_peppol_send_to_cyber_relais" model="ir.actions.server">
+        <field name="name">Send to Cyber-Relais</field>
+	<field name="sequence">20</field>
+        <field name="model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_send_to_cyber_relais()
+        </field>
+    </record>
+
+    <record id="action_gica_peppol_reset_to_send" model="ir.actions.server">
+        <field name="name">Reset to To Send</field>
+	<field name="sequence">30</field>
+        <field name="model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_reset_to_send()
+        </field>
+    </record>
+
+    <record id="action_gica_peppol_reset_to_generate" model="ir.actions.server">
+        <field name="name">Reset to To Generate</field>
+        <field name="sequence">40</field>
+        <field name="model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_model_id" ref="model_gica_peppol_sale"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_reset_to_generate()
+        </field>
+    </record>
+
+    <record id="action_gica_peppol_purchase_import_ubl" model="ir.actions.server">
+        <field name="name">Import UBL</field>
+        <field name="model_id" ref="model_gica_peppol_purchase"/>
+        <field name="binding_model_id" ref="model_gica_peppol_purchase"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">records.action_import_ubl()</field>
+    </record>
+</odoo>

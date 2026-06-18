@@ -1,0 +1,434 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Language: fr_BE\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#. module: gica_peppol
+#: model.model.constraint,message.constraint_gica_peppol_sale_unique_move_id
+msgid "A Peppol sale record already exists for this invoice."
+msgstr "Un enregistrement de vente Peppol existe déjà pour cette facture."
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__delivered
+#: model.model.fields.selection,name.selection__gica_peppol_sale__peppol_status__delivered
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "Delivered"
+msgstr "Remis"
+
+#. module: gica_peppol
+#: model.model,name.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__partner_id
+msgid "Customer"
+msgstr "Client"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__partner_vat
+msgid "Customer VAT"
+msgstr "TVA client"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__error
+#: model.model.fields.selection,name.selection__gica_peppol_sale__peppol_status__error
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "Error"
+msgstr "Erreur"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__error_message
+msgid "Error Message"
+msgstr "Message d'erreur"
+
+#. module: gica_peppol
+#: model_terms.ui.view,arch_db.view_company_form_gica_peppol
+msgid "GICA Peppol"
+msgstr "GICA Peppol"
+
+#. module: gica_peppol
+#: model.model,name.model_gica_peppol_sale
+msgid "GICA Peppol Sale"
+msgstr "Vente Peppol GICA"
+
+#. module: gica_peppol
+#: model.model,name.model_gica_peppol_translation_mixin
+msgid "GICA Peppol Translation Mixin"
+msgstr "Mixin de traduction GICA Peppol"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_res_company__gica_peppol_xml_mode
+msgid "XML Mode"
+msgstr "Mode XML"
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__res_company__gica_peppol_xml_mode__odoo_bis3
+msgid "Generate Odoo BIS3 XML"
+msgstr "Générer le XML BIS3 Odoo"
+
+#. module: gica_peppol
+#: model.actions.server,name.action_gica_peppol_generate_xml
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_form
+msgid "Generate XML"
+msgstr "Générer le XML"
+
+#. module: gica_peppol
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "Group By"
+msgstr "Regrouper par"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__id
+msgid "ID"
+msgstr "ID"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__move_id
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__invoice_date
+msgid "Invoice Date"
+msgstr "Date facture"
+
+#. module: gica_peppol
+#: model.model,name.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__write_uid
+msgid "Last Updated by"
+msgstr "Modifié par"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__write_date
+msgid "Last Updated on"
+msgstr "Modifié le"
+
+#. module: gica_peppol
+#: model_terms.ui.view,arch_db.gica_peppol_i18n_terms
+msgid "No Peppol document to send."
+msgstr "Aucun document Peppol à envoyer."
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__none
+msgid "Not managed"
+msgstr "Non géré"
+
+#. module: gica_peppol
+#: model_terms.ui.view,arch_db.gica_peppol_i18n_terms
+msgid "Only rejected or error Peppol documents can be reset to To Send."
+msgstr "Seuls les documents Peppol rejetés ou en erreur peuvent être remis à l'état À envoyer."
+
+#. module: gica_peppol
+#: model.ui.menu,name.menu_gica_peppol_root
+msgid "Peppol"
+msgstr "Peppol"
+
+#. module: gica_peppol
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_form
+msgid "Peppol Sale"
+msgstr "Vente Peppol"
+
+#. module: gica_peppol
+#: model.actions.act_window,name.action_gica_peppol_sale
+#: model.ui.menu,name.menu_gica_peppol_sales
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_tree
+msgid "Peppol Sales"
+msgstr "Ventes Peppol"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_account_bank_statement_line__gica_peppol_status
+#: model.model.fields,field_description.field_account_move__gica_peppol_status
+#: model.model.fields,field_description.field_account_payment__gica_peppol_status
+msgid "Peppol Status"
+msgstr "Statut Peppol"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__name
+msgid "Reference"
+msgstr "Référence"
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__rejected
+#: model.model.fields.selection,name.selection__gica_peppol_sale__peppol_status__rejected
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "Rejected"
+msgstr "Rejeté"
+
+#. module: gica_peppol
+#: model.actions.server,name.action_gica_peppol_reset_to_send
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_form
+msgid "Reset to To Send"
+msgstr "Remettre à À envoyer"
+
+#. module: gica_peppol
+#: model.actions.server,name.action_gica_peppol_reset_to_generate
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_form
+msgid "Reset to To Generate"
+msgstr "Remettre à À générer"
+
+#. module: gica_peppol
+#: model.actions.server,name.action_gica_peppol_send_to_cyber_relais
+msgid "Send to Cyber-Relais"
+msgstr "Envoyer à Cyber-Relais"
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__sent
+#: model.model.fields.selection,name.selection__gica_peppol_sale__peppol_status__sent
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "Sent"
+msgstr "Envoyé"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__sent_date
+msgid "Sent Date"
+msgstr "Date d'envoi"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__peppol_status
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "Status"
+msgstr "Statut"
+
+#. module: gica_peppol
+#: model_terms.ui.view,arch_db.gica_peppol_i18n_terms
+msgid ""
+"This invoice has already been sent to Peppol. Please create a credit note "
+"instead."
+msgstr ""
+"Cette facture a déjà été envoyée via Peppol. Veuillez créer une note de "
+"crédit."
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__to_generate
+#: model.model.fields.selection,name.selection__gica_peppol_sale__peppol_status__to_generate
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "To Generate"
+msgstr "À générer"
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__account_move__gica_peppol_status__to_send
+#: model.model.fields.selection,name.selection__gica_peppol_sale__peppol_status__to_send
+#: model_terms.ui.view,arch_db.view_gica_peppol_sale_search
+msgid "To Send"
+msgstr "À envoyer"
+
+#. module: gica_peppol
+#: model.model.fields,field_description.field_gica_peppol_sale__amount_total
+msgid "Total Amount"
+msgstr "Montant total"
+
+#. module: gica_peppol
+#: model.model.fields.selection,name.selection__res_company__gica_peppol_xml_mode__existing_xml
+msgid "Use existing XML attachment"
+msgstr "Utiliser une pièce jointe XML existante"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Only Peppol documents in To Generate status can be generated."
+msgstr "Seuls les documents Peppol au statut À générer peuvent être générés."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "No XML attachment found."
+msgstr "Aucune pièce jointe XML trouvée."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Peppol XML generated."
+msgstr "XML Peppol généré."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Invoice PDF generated."
+msgstr "PDF de la facture généré."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Only Peppol documents with a generation error can be reset to To Generate."
+msgstr "Seuls les documents Peppol en erreur de génération peuvent être remis à l'état À générer."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Only rejected documents or documents with a sending error can be reset to To Send."
+msgstr "Seuls les documents rejetés ou en erreur d'envoi peuvent être remis à l'état À envoyer."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Only Peppol documents in To Send status can be sent."
+msgstr "Seuls les documents Peppol au statut A envoyer peuvent etre envoyes."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Only Peppol documents in To Send status can be sent."
+msgstr "Seuls les documents Peppol au statut À envoyer peuvent être envoyés."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "No XML attachment found."
+msgstr "Aucune pièce jointe XML n'a été trouvée."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Missing Peppol SFTP host."
+msgstr "Le serveur SFTP Peppol est manquant."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Missing Peppol SFTP user."
+msgstr "L'utilisateur SFTP Peppol est manquant."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "Missing Peppol SFTP private key path."
+msgstr "Le chemin de la clé privée SFTP Peppol est manquant."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "SFTP send failed: %s"
+msgstr "L'envoi SFTP a échoué : %s"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_res_company__peppol_sftp_private_key
+msgid "Private Key Path"
+msgstr "Chemin de la clé privée"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_sale__delivered_date
+msgid "Delivered Date"
+msgstr "Date de remise"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_sale__sftp_filename
+msgid "SFTP Filename"
+msgstr "Nom du fichier SFTP"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "No XML attachment found."
+msgstr "Aucune pièce jointe XML trouvée."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "No EDI decoder found for this XML file."
+msgstr "Aucun décodeur EDI trouvé pour ce fichier XML."
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "The XML file could not be imported."
+msgstr "Le fichier XML n'a pas pu être importé."
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__document_type
+msgid "Document Type"
+msgstr "Type de document"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__html_attachment_id
+msgid "HTML Attachment"
+msgstr "Pièce jointe HTML"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__pdf_attachment_id
+msgid "PDF Attachment"
+msgstr "Pièce jointe PDF"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__supplier_peppol_id
+msgid "Supplier Peppol ID"
+msgstr "ID Peppol fournisseur"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__supplier_reference
+msgid "Supplier Reference"
+msgstr "Référence fournisseur"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__supplier_vat
+msgid "Supplier VAT"
+msgstr "TVA fournisseur"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__amount_total
+msgid "Total"
+msgstr "Total"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__move_id
+msgid "Vendor Bill"
+msgstr "Facture fournisseur"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__xml_attachment_id
+msgid "XML Attachment"
+msgstr "Pièce jointe XML"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_form
+msgid "Import UBL"
+msgstr "Importer UBL"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_form
+msgid "Open Vendor Bill"
+msgstr "Ouvrir la facture fournisseur"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_tree
+msgid "Peppol Purchases"
+msgstr "Achats Peppol"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__company_id
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_search
+msgid "Company"
+msgstr "Société"
+
+#. module: gica_peppol
+#: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_purchase__partner_id
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_search
+msgid "Vendor"
+msgstr "Fournisseur"
+
+#. module: gica_peppol
+#: model:ir.model.fields.selection,name:gica_peppol.selection__gica_peppol_purchase__state__imported
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_search
+msgid "Imported"
+msgstr "Importé"
+
+#. module: gica_peppol
+#: model:ir.model.fields.selection,name:gica_peppol.selection__gica_peppol_purchase__state__received
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_search
+msgid "Received"
+msgstr "Reçu"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_form
+msgid "Attachments"
+msgstr "Pièces jointes"

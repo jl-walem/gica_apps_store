@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="gica_peppol_i18n_terms" name="GICA Peppol Translation Terms">
+        <div>This invoice has already been sent to Peppol. Please create a credit note instead.</div>
+        <div>Only rejected or error Peppol documents can be reset to To Send.</div>
+        <div>No Peppol document to send.</div>
+        <div>Only Peppol documents in To Generate status can be generated.</div>
+        <div>No XML attachment found.</div>
+        <div>Peppol XML generated.</div>
+        <div>Invoice PDF generated.</div>
+        <div>Only Peppol documents with a generation error can be reset to To Generate.</div>
+        <div>Only rejected documents or documents with a sending error can be reset to To Send.</div>
+        <div>Only Peppol documents in To Send status can be sent.</div>
+        <div>No XML attachment found.</div>
+        <div>Missing Peppol SFTP host.</div>
+        <div>Missing Peppol SFTP user.</div>
+        <div>Missing Peppol SFTP private key path.</div>
+        <div>SFTP send failed: %s</div>
+ 	<div>No XML attachment found.</div>
+	<div>No EDI decoder found for this XML file.</div>
+	<div>The XML file could not be imported.</div>
+    </template>
+</odoo>

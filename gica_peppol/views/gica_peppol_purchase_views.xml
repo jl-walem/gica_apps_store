@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_gica_peppol_purchase_tree" model="ir.ui.view">
+        <field name="name">gica.peppol.purchase.tree</field>
+        <field name="model">gica.peppol.purchase</field>
+        <field name="arch" type="xml">
+            <tree string="Peppol Purchases" create="0" delete="0">
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="company_id"/>
+                <field name="partner_id"/>
+                <field name="supplier_reference"/>
+                <field name="invoice_date"/>
+                <field name="amount_total"/>
+                <field name="currency_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_gica_peppol_purchase_form" model="ir.ui.view">
+        <field name="name">gica.peppol.purchase.form</field>
+        <field name="model">gica.peppol.purchase</field>
+        <field name="arch" type="xml">
+            <form string="Peppol Purchase" create="0" delete="0">
+                <header>
+                    <button name="action_import_ubl"
+                            type="object"
+                            string="Import UBL"
+                            class="btn-primary"
+                            invisible="state != 'received' or move_id"/>
+                    <button name="action_open_vendor_bill"
+                            type="object"
+                            string="Open Vendor Bill"
+                            class="btn-primary"
+                            invisible="not move_id"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="received,imported,error,rejected"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="company_id"/>
+                            <field name="document_type"/>
+                            <field name="move_id" readonly="1"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                            <field name="supplier_reference"/>
+                            <field name="supplier_vat"/>
+                            <field name="supplier_peppol_id"/>
+                            <field name="invoice_date"/>
+                            <field name="currency_id"/>
+                            <field name="amount_total"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Attachments">
+                            <group>
+                                <field name="xml_attachment_id"/>
+                                <field name="pdf_attachment_id"/>
+                                <field name="html_attachment_id"/>
+                            </group>
+                        </page>
+                        <page string="Error">
+                            <field name="error_message" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_gica_peppol_purchase_search" model="ir.ui.view">
+        <field name="name">gica.peppol.purchase.search</field>
+        <field name="model">gica.peppol.purchase</field>
+        <field name="arch" type="xml">
+            <search string="Peppol Purchases">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="supplier_reference"/>
+                <field name="supplier_vat"/>
+                <field name="supplier_peppol_id"/>
+                <filter name="received" string="Received" domain="[('state','=','received')]"/>
+                <filter name="imported" string="Imported" domain="[('state','=','imported')]"/>
+                <filter name="error" string="Error" domain="[('state','=','error')]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_by_company" string="Company" context="{'group_by':'company_id'}"/>
+                    <filter name="group_by_state" string="Status" context="{'group_by':'state'}"/>
+                    <filter name="group_by_vendor" string="Vendor" context="{'group_by':'partner_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>

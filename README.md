@@ -1,7 +1,5 @@
 # GICA Apps Store
 
-![GICA Bank Statement](gica_bank_statement/static/description/cover.png)
-
 Open-source GICA modules for Odoo Community.
 
 This repository hosts the official collection of GICA modules for Odoo, providing accounting, banking, Peppol, migration and business management tools designed to bridge traditional GICA workflows with the Odoo ecosystem.
@@ -26,13 +24,27 @@ Main features:
 
 The Open Documents Wizard allows accountants to select and combine multiple open customer or supplier documents while the running total is updated in real time. This makes it easy to reconstruct the exact amount appearing on a bank statement using a workflow familiar to many Belgian accounting professionals.
 
+### GICA Peppol
+
+Peppol integration for Odoo Community using Cyber-Relais services.
+
+Main features:
+
+* Outbound Peppol document management
+* UBL BIS 3.0 generation
+* PDF generation
+* SFTP transmission
+* Inbound purchase invoice reception
+* API-based integration
+* UBL import into vendor bills
+* Individual and batch processing
+
 ---
 
 ## Planned Modules
 
 The repository is intended to host additional GICA modules, including:
 
-* GICA Peppol
 * GICA Import
 * GICA Migration Tools
 * GICA Matching
@@ -54,7 +66,7 @@ The repository is intended to host additional GICA modules, including:
 Current modules may include:
 
 * English
-* Françs
+* Français
 * Nederlands
 
 ---

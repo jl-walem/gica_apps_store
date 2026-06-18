@@ -1,0 +1,84 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h1>GICA Peppol</h1>
+        <h2>Peppol integration for Odoo 17 Community</h2>
+
+        <p>
+            GICA Peppol connects Odoo with external Peppol services operated by Cyber-Relais.
+        </p>
+
+        <p>
+            The module supports both outbound and inbound Peppol document processing.
+        </p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2>Outbound Peppol Sales</h2>
+
+        <ul>
+            <li>Create Peppol sales records from posted invoices</li>
+            <li>Generate UBL BIS 3.0 XML</li>
+            <li>Generate or reuse PDF attachments</li>
+            <li>Send documents through SFTP</li>
+            <li>Track transmission status</li>
+            <li>Multi-company support</li>
+        </ul>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2>Inbound Peppol Purchases</h2>
+
+        <ul>
+            <li>Receive vendor invoices through API</li>
+            <li>Store XML, PDF and HTML attachments</li>
+            <li>Create Peppol purchase records</li>
+            <li>Import UBL documents into vendor bills</li>
+            <li>Individual or batch import</li>
+            <li>Vendor bills remain in draft for review</li>
+        </ul>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2>Architecture</h2>
+
+        <pre>
+Outbound:
+Odoo -> UBL/PDF -> Cyber-Relais -> Peppol
+
+Inbound:
+Peppol -> Cyber-Relais -> Odoo API -> Vendor Bill Draft
+        </pre>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2>Important note</h2>
+
+        <p>
+            The inbound API expects a pure UBL Invoice or Credit Note document.
+        </p>
+
+        <p>
+            If a Standard Business Document (SBD) is received, the SBD envelope should be extracted by the external Peppol platform before transmission to Odoo.
+        </p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2>Author</h2>
+
+        <p>
+            Jean-Luc Walem<br/>
+            Eurologiciel<br/>
+            https://www.eurologiciel.be
+        </p>
+    </div>
+</section>
