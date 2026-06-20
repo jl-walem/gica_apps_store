@@ -4,12 +4,15 @@ import traceback
 
 from odoo import fields, models, _
 from odoo.exceptions import UserError
-
+from lxml import etree
+import base64
+#import logging
+#_logger = logging.getLogger(__name__)
 
 class GicaPeppolPurchase(models.Model):
     _name = "gica.peppol.purchase"
     _description = "GICA Peppol Purchase"
-    _inherit = ["mail.thread", "mail.activity.mixin"]
+    _inherit = ["mail.thread", "mail.activity.mixin", "gica.peppol.translation.mixin"]
     _order = "create_date desc, id desc"
 
     name = fields.Char(
@@ -126,6 +129,61 @@ class GicaPeppolPurchase(models.Model):
         readonly=True,
     )
 
+    def _parse_ubl_metadata(self, xml_content):
+        root = etree.fromstring(xml_content)
+
+        ns = {
+            "cbc": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+            "cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+        }
+
+        tag = etree.QName(root).localname
+
+        if tag == "Invoice":
+            document_type = "invoice"
+        elif tag == "CreditNote":
+            document_type = "credit_note"
+        else:
+            raise ValueError("Unsupported UBL document type: %s" % tag)
+
+        name = root.findtext("cbc:ID", namespaces=ns)
+        invoice_date = root.findtext("cbc:IssueDate", namespaces=ns)
+
+        amount_node = root.find(
+            "cac:LegalMonetaryTotal/cbc:PayableAmount",
+            namespaces=ns
+        )
+
+        amount_total = 0.0
+        currency = False
+
+        if amount_node is not None:
+            amount_total = float(amount_node.text or 0.0)
+            currency = amount_node.get("currencyID")
+
+        supplier_reference = root.findtext(
+            "cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName",
+            namespaces=ns
+        ) or root.findtext(
+            "cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name",
+            namespaces=ns
+        ) or name
+
+        if not name:
+            raise ValueError("Missing UBL document ID")
+
+        if not invoice_date:
+            raise ValueError("Missing UBL issue date")
+
+        return {
+            "name": name,
+            "document_type": document_type,
+            "supplier_reference": supplier_reference,
+            "invoice_date": invoice_date,
+            "amount_total": amount_total,
+            "currency": currency,
+        }
+
     def action_open_vendor_bill(self):
         self.ensure_one()
         if not self.move_id:
@@ -202,3 +260,27 @@ class GicaPeppolPurchase(models.Model):
                 })
 
         return True
+    
+    def unlink(self):
+        attachment_ids = []
+
+        for rec in self:
+            if rec.state != "received":
+                message = "You can only delete Peppol purchase documents in Received status."
+                rec._gica_error(message)
+
+            attachment_ids += [
+                rec.xml_attachment_id.id,
+                rec.pdf_attachment_id.id,
+                rec.html_attachment_id.id,
+            ]
+
+        attachment_ids = [att_id for att_id in attachment_ids if att_id]
+
+        res = super().unlink()
+
+        attachments = self.env["ir.attachment"].browse(attachment_ids).exists()
+        if attachments:
+            attachments.unlink()
+
+        return res

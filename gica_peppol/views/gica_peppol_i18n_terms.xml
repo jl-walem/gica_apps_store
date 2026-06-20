@@ -16,8 +16,9 @@
         <div>Missing Peppol SFTP user.</div>
         <div>Missing Peppol SFTP private key path.</div>
         <div>SFTP send failed: %s</div>
- 	<div>No XML attachment found.</div>
-	<div>No EDI decoder found for this XML file.</div>
-	<div>The XML file could not be imported.</div>
+        <div>No XML attachment found.</div>
+        <div>No EDI decoder found for this XML file.</div>
+        <div>The XML file could not be imported.</div>
+        <div>You can only delete Peppol purchase documents in Received status.</div>
     </template>
 </odoo>

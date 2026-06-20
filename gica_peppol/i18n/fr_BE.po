@@ -286,16 +286,6 @@ msgstr "Seuls les documents Peppol au statut A envoyer peuvent etre envoyes."
 
 #. module: gica_peppol
 #: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
-msgid "Only Peppol documents in To Send status can be sent."
-msgstr "Seuls les documents Peppol au statut À envoyer peuvent être envoyés."
-
-#. module: gica_peppol
-#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
-msgid "No XML attachment found."
-msgstr "Aucune pièce jointe XML n'a été trouvée."
-
-#. module: gica_peppol
-#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
 msgid "Missing Peppol SFTP host."
 msgstr "Le serveur SFTP Peppol est manquant."
 
@@ -328,11 +318,6 @@ msgstr "Date de remise"
 #: model:ir.model.fields,field_description:gica_peppol.field_gica_peppol_sale__sftp_filename
 msgid "SFTP Filename"
 msgstr "Nom du fichier SFTP"
-
-#. module: gica_peppol
-#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
-msgid "No XML attachment found."
-msgstr "Aucune pièce jointe XML trouvée."
 
 #. module: gica_peppol
 #: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
@@ -432,3 +417,8 @@ msgstr "Reçu"
 #: model_terms:ir.ui.view,arch_db:gica_peppol.view_gica_peppol_purchase_form
 msgid "Attachments"
 msgstr "Pièces jointes"
+
+#. module: gica_peppol
+#: model_terms:ir.ui.view,arch_db:gica_peppol.gica_peppol_i18n_terms
+msgid "You can only delete Peppol purchase documents in Received status."
+msgstr "Vous ne pouvez supprimer que les documents d'achat Peppol ayant le statut Reçu."

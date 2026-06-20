@@ -6,6 +6,8 @@ import json
 from odoo import http, fields
 from odoo.http import request
 
+from html import unescape
+
 
 class GicaPeppolPurchaseController(http.Controller):
 
@@ -29,21 +31,28 @@ class GicaPeppolPurchaseController(http.Controller):
         if not company:
             return {"status": "error", "message": "Invalid company_code"}
 
-        name = payload.get("name") or payload.get("supplier_reference") or "Inbound Peppol"
+        xml_content = base64.b64decode(payload.get("xml_base64") or "")
 
+        metadata = request.env["gica.peppol.purchase"].sudo()._parse_ubl_metadata(xml_content)
+        
+        currency = request.env["res.currency"].sudo().search(
+            [("name", "=", metadata["currency"])],
+            limit=1
+        )
+
+        if not currency:
+            raise ValueError(
+                f"Currency '{metadata['currency']}' not found in Odoo"
+            )
+        
         purchase = request.env["gica.peppol.purchase"].sudo().create({
-            "name": name,
             "company_id": company.id,
-            "document_type": payload.get("document_type") or "unknown",
-            "supplier_reference": payload.get("supplier_reference"),
-            "supplier_vat": payload.get("supplier_vat"),
-            "supplier_peppol_id": payload.get("supplier_peppol_id"),
-            "invoice_date": payload.get("invoice_date"),
-            "amount_total": payload.get("amount_total") or 0.0,
-            "currency_id": request.env["res.currency"].sudo().search([
-                ("name", "=", payload.get("currency") or company.currency_id.name)
-            ], limit=1).id or company.currency_id.id,
-            "state": "received",
+            "name": unescape(metadata["name"]),
+            "document_type": metadata["document_type"],
+            "supplier_reference": unescape(metadata["supplier_reference"]),
+            "invoice_date": metadata["invoice_date"],
+            "amount_total": metadata["amount_total"],
+            "currency_id": currency.id,
         })
 
         def create_attachment(field_name, filename_key, content_key, default_name, mimetype):
