@@ -4,7 +4,7 @@ Supplier payment preparation and SEPA Credit Transfer management for Odoo Commun
 
 Prepare, review and prioritise supplier payments according to your available cash before generating a standard SEPA Credit Transfer file.
 
-![Cover](static/description/cover.png)
+![Cover](cover.png)
 
 ---
 
@@ -30,7 +30,7 @@ The payment envelope acts as a flexible working basket that can be adjusted unti
 
 ## Quick configuration
 
-![Quick configuration](static/description/01_quick_configuration.png)
+![Quick configuration](01_quick_configuration.png)
 
 Configure one SEPA Bank Profile for each bank account and start preparing supplier payments immediately.
 
@@ -44,7 +44,7 @@ The module provides a simple three-step workflow:
 
 ## Prepare supplier payments
 
-![Prepare supplier payments](static/description/02_prepare_supplier_payments.png)
+![Prepare supplier payments](02_prepare_supplier_payments.png)
 
 Review all supplier invoices eligible for payment before creating a payment envelope.
 
@@ -68,7 +68,7 @@ This helps accountants organise and prioritise supplier payments before creating
 
 ## Complete payment review
 
-![Complete payment review](static/description/03_complete_payment_review.png)
+![Complete payment review](03_complete_payment_review.png)
 
 The **Prepare SEPA Payment** wizard centralises everything required to validate a supplier payment before it is included in a payment envelope.
 
@@ -84,7 +84,7 @@ Bringing all relevant information together helps accountants make informed payme
 
 ## Complete payment workflow
 
-![Complete payment workflow](static/description/04_complete_payment_workflow.png)
+![Complete payment workflow](04_complete_payment_workflow.png)
 
 Once a payment envelope has been validated, GICA SEPA Payment manages the complete payment workflow.
 
@@ -103,7 +103,7 @@ The workflow status provides complete visibility throughout the payment lifecycl
 
 ## One payment batch. One accounting entry.
 
-![One payment batch. One accounting entry.](static/description/05_one_payment_batch_one_accounting_entry.png)
+![One payment batch. One accounting entry.](05_one_payment_batch_one_accounting_entry.png)
 
 Once the payment envelope has been executed by the bank, GICA SEPA Payment creates a single accounting entry for the complete payment batch.
 
