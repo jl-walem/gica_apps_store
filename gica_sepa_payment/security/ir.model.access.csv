@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gica_sepa_move_info_user,gica.sepa.move.info,model_gica_sepa_move_info,account.group_account_user,1,1,1,1
+access_gica_sepa_prepare_wizard_user,gica.sepa.prepare.wizard,model_gica_sepa_prepare_wizard,account.group_account_user,1,1,1,1
+access_gica_sepa_candidate_user,gica.sepa.candidate,model_gica_sepa_candidate,account.group_account_user,1,1,1,1
+access_gica_sepa_prepare_associated_line_user,gica.sepa.prepare.associated.line,model_gica_sepa_prepare_associated_line,account.group_account_user,1,1,1,1
+access_gica_sepa_payment_envelope,gica.sepa.payment.envelope,model_gica_sepa_payment_envelope,account.group_account_user,1,1,1,1
+access_gica_sepa_payment_envelope_line,gica.sepa.payment.envelope.line,model_gica_sepa_payment_envelope_line,account.group_account_user,1,1,1,1
+access_gica_sepa_payment_envelope_line,gica.sepa.payment.envelope.line,model_gica_sepa_payment_envelope_line,account.group_account_user,1,1,1,1
+access_gica_sepa_add_all_ready_wizard,gica.sepa.add.all.ready.wizard,model_gica_sepa_add_all_ready_wizard,account.group_account_user,1,1,1,1
+access_gica_sepa_add_manual_payment_wizard,gica.sepa.add.manual.payment.wizard,model_gica_sepa_add_manual_payment_wizard,base.group_user,1,1,1,1
+access_gica_sepa_select_ready_wizard,gica.sepa.select.ready.wizard,model_gica_sepa_select_ready_wizard,account.group_account_user,1,1,1,1
+access_gica_sepa_bank_profile_user,gica.sepa.bank.profile.user,model_gica_sepa_bank_profile,account.group_account_user,1,1,1,1

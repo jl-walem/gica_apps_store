@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_gica_sepa_prepare_wizard_form" model="ir.ui.view">
+        <field name="name">gica.sepa.prepare.wizard.form</field>
+        <field name="model">gica.sepa.prepare.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Prepare SEPA Payment">
+                <sheet>
+                    <notebook>
+                        <page string="General">
+                            <!-- Z1 : haut, deux colonnes -->
+                            <group>
+                                <!-- Z1g : Invoice -->
+                                <group string="Invoice">
+                                    <field name="partner_id" readonly="1"/>
+                                    <field name="move_line_id" string="Invoice" readonly="1"/>
+                                    <field name="due_date" readonly="1"/>
+                                    <field name="ready" readonly="blocked"/>
+                                    <field name="prepared_amount"/>
+                                </group>
+
+                                <!-- Z1d : Amounts -->
+                                <group string="Amounts">
+                                    <field name="invoice_total" readonly="1"/>
+                                    <field name="associated_deduction_amount" readonly="1"/>
+                                    <field name="amount_residual" readonly="1"/>
+                                    <field name="discount_amount"/>
+                                    <field name="discount_deadline"/>
+                                    <field name="envelope_amount" readonly="1"/>
+                                    <field name="amount_to_pay" readonly="1" class="fw-bold"/>
+                                </group>
+                            </group>
+
+                            <!-- Z2 : bas -->
+                            <group string="Follow-up">
+                                <group>
+                                    <field name="blocked" string="Litigation"/>
+                                    <field name="litigation_note" readonly="not blocked"/>
+                                </group>
+
+                                <group>
+                                    <field name="payment_note"/>
+                                </group>
+                            </group>
+
+                        </page>
+                        <page string="Associated Documents">
+                            <field name="associated_line_ids">
+                                <tree editable="bottom" create="0" delete="0">
+                                    <field name="line_type" force_save="1"/>
+                                    <field name="selected" readonly="line_type == 'applied'"/>
+                                    <field name="move_line_id" column_invisible="True" force_save="1"/>
+                                    <field name="move_id"/>
+                                    <field name="document_date"/>
+                                    <field name="amount_total" readonly="1" force_save="1"/>
+                                    <field name="amount_used" readonly="1" force_save="1"/>
+                                    <field name="amount_available" readonly="1" force_save="1"/>
+                                    <field name="amount_to_apply" readonly="line_type == 'applied'"/>
+                                    <field name="currency_id" optional="hide" force_save="1"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                       <page string="Envelopes">
+                            <field name="envelope_line_ids" readonly="1">
+                                <tree create="0" delete="0">
+                                    <field name="envelope_id"/>
+                                    <field name="envelope_state"/>
+                                    <field name="envelope_execution_date"/>
+                                    <field name="envelope_line_count"/>
+                                    <field name="envelope_total_amount"/>
+                                    <field name="payment_amount"/>
+                                    <field name="communication"/>
+                                </tree>
+                            </field>
+                        </page>
+                        
+                    </notebook>
+
+                </sheet>
+
+                <footer>
+
+                    <button name="action_create_sepa_info"
+                            type="object"
+                            string="Save SEPA Payment Info"
+                            class="btn-primary"/>
+
+                    <button string="Cancel"
+                            special="cancel"/>
+
+                </footer>
+
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,23 @@
+<odoo>
+    <record id="rule_gica_sepa_move_info_company" model="ir.rule">
+        <field name="name">GICA SEPA Move Info multi-company</field>
+        <field name="model_id" ref="model_gica_sepa_move_info"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_gica_sepa_candidate_company" model="ir.rule">
+        <field name="name">GICA SEPA Candidate multi-company</field>
+        <field name="model_id" ref="model_gica_sepa_candidate"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_gica_sepa_payment_envelope_company" model="ir.rule">
+        <field name="name">GICA SEPA Payment Envelope multi-company</field>
+        <field name="model_id" ref="model_gica_sepa_payment_envelope"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="rule_gica_sepa_payment_envelope_line_company" model="ir.rule">
+        <field name="name">GICA SEPA Payment Envelope Line multi-company</field>
+        <field name="model_id" ref="model_gica_sepa_payment_envelope_line"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

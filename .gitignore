@@ -2,3 +2,6 @@ design/
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
+.DS_Store
+*~

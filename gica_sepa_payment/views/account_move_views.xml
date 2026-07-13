@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_move_form_gica_sepa_payment" model="ir.ui.view">
+        <field name="name">account.move.form.gica.sepa.payment</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_gica_prepare_sepa_payment"
+                        type="object"
+                        string="Prepare SEPA Payment"
+                        invisible="not gica_sepa_can_prepare or gica_sepa_move_info_id"/>
+                <button name="action_gica_prepare_sepa_payment"
+                        type="object"
+                        string="Edit SEPA Payment Info"
+                        invisible="not gica_sepa_can_prepare or not gica_sepa_move_info_id"/>
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <field name="gica_sepa_can_prepare" invisible="1"/>
+                <field name="gica_sepa_move_info_id" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

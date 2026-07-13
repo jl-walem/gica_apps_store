@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_gica_sepa_candidate_search" model="ir.ui.view">
+        <field name="name">gica.sepa.candidate.search</field>
+        <field name="model">gica.sepa.candidate</field>
+        <field name="arch" type="xml">
+            <search string="Supplier Payment Candidates">
+
+                <field name="partner_name"/>
+                <field name="move_id"/>
+                <field name="payment_reference"/>
+                <field name="due_date"/>
+                <field name="amount_residual"/>
+                <field name="prepare_status"/>
+
+                <separator/>
+
+                <filter string="Overdue &gt; 7 days"
+                        name="overdue_7"
+                        domain="[('due_date', '&lt;', (context_today() - relativedelta(days=7)).strftime('%Y-%m-%d'))]"/>
+
+                <filter string="Overdue &gt; 30 days"
+                        name="overdue_30"
+                        domain="[('due_date', '&lt;', (context_today() - relativedelta(days=30)).strftime('%Y-%m-%d'))]"/>
+
+                <filter string="Overdue &gt; 60 days"
+                        name="overdue_60"
+                        domain="[('due_date', '&lt;', (context_today() - relativedelta(days=60)).strftime('%Y-%m-%d'))]"/>
+
+                <filter string="Overdue &gt; 90 days"
+                        name="overdue_90"
+                        domain="[('due_date', '&lt;', (context_today() - relativedelta(days=90)).strftime('%Y-%m-%d'))]"/>
+                <group expand="0" string="Group By">
+
+                    <filter string="Supplier"
+                            name="group_partner_name"
+                            context="{'group_by': 'partner_name'}"/>
+
+                    <filter string="Due Date"
+                            name="group_due_date"
+                            context="{'group_by': 'due_date'}"/>
+
+                    <filter string="Bank Account"
+                            name="group_partner_bank"
+                            context="{'group_by': 'partner_bank'}"/>
+
+                </group>
+
+                <separator/>
+                    <filter string="To Prepare"
+                            name="filter_to_prepare"
+                            domain="[('prepare_status','=','new')]"/>
+
+                    <filter string="In Progress"
+                            name="filter_in_progress"
+                            domain="[('prepare_status','=','draft')]"/>
+
+                    <filter string="Ready"
+                            name="filter_ready"
+                            domain="[('prepare_status','=','ready')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_gica_sepa_candidate_tree" model="ir.ui.view">
+        <field name="name">gica.sepa.candidate.tree</field>
+        <field name="model">gica.sepa.candidate</field>
+        <field name="arch" type="xml">
+            <tree create="0" edit="0" delete="0">
+                <field name="partner_name"/>
+                <field name="move_id"
+                    string="Invoice"
+                    widget="many2one"
+                    options="{'no_open': False, 'no_create': True}"/>
+                <button name="action_open_pdf"
+                    type="object"
+                    icon="fa-file-pdf-o"
+                    string=""
+                    title="Open PDF"/>
+                <field name="invoice_date"/>
+                <field name="due_date"/>
+                <field name="payment_reference"/>
+                <field name="partner_bank"/>
+                <field name="invoice_total" string="Total" sum="Total Invoice" />
+                <field name="amount_residual" string="Residual" sum="Total Residual"/>
+                <field name="discount_amount" string="Discount" sum="Total Discount"/>
+                <field name="amount_to_pay" string="To Pay" class="fw-bold" decoration-info="amount_to_pay &gt; 0" sum="Total To Pay"/>
+                <field name="prepared_amount" string="Prepared" class="fw-bold" decoration-info="amount_to_pay &gt; 0" sum="Total Prepared"/>
+                <field name="prepare_status" optional="hide"/>
+                <field name="currency_id" optional="hide"/>
+
+                <!-- New -->
+                <button name="action_prepare_sepa"
+                        type="object"
+                        string="Prepare"
+                        class="btn-secondary"
+                        invisible="prepare_status != 'new'"/>
+
+                <!-- In Progress -->
+                <button name="action_prepare_sepa"
+                        type="object"
+                        string="Revise"
+                        class="btn-gica-orange"
+                        invisible="prepare_status != 'draft'"/>
+
+                <!-- Ready -->
+                <button name="action_prepare_sepa"
+                        type="object"
+                        string="Ready"
+                        class="btn-success"
+                        invisible="prepare_status != 'ready'"/>
+
+                <!-- Litigation -->
+                <button name="action_prepare_sepa"
+                        type="object"
+                        string="Litigation"
+                        class="btn-danger"
+                        invisible="prepare_status != 'blocked'"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_gica_sepa_candidate" model="ir.actions.act_window">
+        <field name="name">Prepare Supplier Payments</field>
+        <field name="res_model">gica.sepa.candidate</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_gica_sepa_candidate_tree"/>
+         <field name="search_view_id" ref="view_gica_sepa_candidate_search"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="gica_sepa_i18n_terms" name="GICA SEPA Translation Terms">
+        <DIV>No open supplier accounting line was found for this vendor bill.</DIV>
+        <DIV>You can only add payment lines to a draft envelope.</DIV>
+        <DIV>Please select a document.</DIV>
+        <DIV>This document is already present in this payment envelope.</DIV>
+        <DIV>There is no remaining amount to pay for this document.</DIV>
+        <DIV>Payment amount must be positive.</DIV>
+        <DIV>Payment amount cannot exceed the available amount.</DIV>
+        <DIV>You cannot modify this SEPA Journal because it is already used by payment envelopes.</DIV>
+        <DIV>You cannot delete this SEPA Journal because it is already used by payment envelopes.</DIV>
+        <DIV>Cash discount cannot be negative.</DIV>
+        <DIV>Cash discount must be lower than the residual amount.</DIV>
+        <DIV>A litigation note is required when Litigation is checked.</DIV>
+        <DIV>Already applied documents cannot be selected.</DIV>
+        <DIV>Amount to apply must be zero for already applied documents.</DIV>
+        <DIV>Amount to apply cannot be negative.</DIV>
+        <DIV>Amount to apply cannot exceed available amount.</DIV>
+        <DIV>You can only add payment lines to a draft envelope.</DIV>
+        <DIV>This envelope already contains payment lines. Use Select Ready Payments to add a group, or remove the existing lines first.</DIV>
+        <DIV>No PDF attachment found for this invoice.</DIV>
+        <DIV>No accounting entry is linked to this payment envelope.</DIV>
+        <DIV>You can only modify lines when the envelope is in Draft state.</DIV>
+        <DIV>You can only generate XML for a confirmed envelope.</DIV>
+        <DIV>No SEPA XML has been generated yet.</DIV>
+        <DIV>You must generate the XML before marking the envelope as sent.</DIV>
+        <DIV>You must mark the envelope as sent before marking it as executed.</DIV>
+        <DIV>You can only post an envelope after bank execution.</DIV>
+        <DIV>Execution date is required before confirming the payment envelope.</DIV>
+        <DIV>You cannot confirm an empty payment envelope.</DIV>
+        <DIV>All payment lines must have a positive amount.</DIV>
+        <DIV>You cannot reset an envelope to draft when it has been executed by the bank or posted in accounting.</DIV>
+        <DIV>Only draft payment envelopes can be deleted.</DIV>
+        <DIV>Please create a payment envelope manually and choose a SEPA Journal first.</DIV>
+        <DIV>You can only add payment lines to a draft envelope.</DIV>
+        <DIV>Only ready payment preparations can be added to an envelope.</DIV>
+        <DIV>The bank journal has no default account.</DIV>
+        <DIV>No matching payment line was found for %s.</DIV>
+        <DIV>Several matching payment lines were found for %s.</DIV>
+        <DIV>Only confirmed envelopes can be posted.</DIV>
+        <DIV>This envelope is already linked to an accounting entry.</DIV>
+        <DIV>No bank journal is defined on this envelope.</DIV>
+        <DIV>Bank execution date is required before posting.</DIV>
+        <DIV>You cannot post an empty payment envelope.</DIV>
+        <DIV>Each envelope line must be linked to an accounting line.</DIV>
+        <DIV>Payment amount must be positive.</DIV>
+        <DIV>The accounting line must be on a reconcilable account.</DIV>
+        <DIV>One of the accounting lines is already fully reconciled.</DIV>
+        <DIV>You can only add lines when the envelope is in Draft state.</DIV>
+        <DIV>You can only add lines when the envelope is in Draft state.</DIV>
+        <DIV>You can only modify lines when the envelope is in Draft state.</DIV>
+        <DIV>You can only delete lines when the envelope is in Draft state.</DIV>
+        <DIV>This document is already present in this payment envelope.</DIV>
+        <DIV>Payment amount must be positive.</DIV>
+        <DIV>Payment amount cannot exceed the available amount.</DIV>
+        <DIV>Payment amount must be positive.</DIV>
+        <DIV>Payment amount cannot exceed the available amount.</DIV>
+        <DIV>You cannot generate XML for an empty envelope.</DIV>
+        <DIV>SEPA XML can only be generated in EUR.</DIV>
+        <DIV>Execution date is required to generate the SEPA XML.</DIV>
+        <DIV>The SEPA journal has no bank account.</DIV>
+        <DIV>The company bank account has no IBAN.</DIV>
+        <DIV>The company bank account has no BIC.</DIV>
+        <DIV>Payment line %s has no supplier.</DIV>
+        <DIV>Supplier %s has no bank account.</DIV>
+        <DIV>Supplier %s has no IBAN.</DIV>
+        <DIV>Supplier %s has no BIC.</DIV>
+    </template>
+</odoo>

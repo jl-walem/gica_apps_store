@@ -1,0 +1,1251 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gica_sepa_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-07 00:50+0000\n"
+"PO-Revision-Date: 2026-07-07 00:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: gica_sepa_payment
+#: model:ir.model.constraint,message:gica_sepa_payment.constraint_gica_sepa_bank_profile_bank_journal_unique
+msgid "A bank journal can only be linked to one SEPA bank profile."
+msgstr "Un journal bancaire ne peut être lié qu’à un seul profil bancaire SEPA."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "A litigation note is required when Litigation is checked."
+msgstr "Une note de litige est obligatoire lorsque Litige est coché."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__accounting_date
+msgid "Accounting Date"
+msgstr "Date comptable"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__account_move_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__account_move_name
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Accounting Entry"
+msgstr "Écriture comptable"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_all_ready_wizard_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_manual_payment_wizard_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Add"
+msgstr "Ajouter"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Add All"
+msgstr "Tout ajouter"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_add_all_ready_wizard
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_all_ready_wizard_form
+msgid "Add All Ready Payments"
+msgstr "Ajouter tous les paiements prêts"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_add_manual_payment_wizard
+msgid "Add Manual Payment"
+msgstr "Ajouter un paiement manuel"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_manual_payment_wizard_form
+msgid "Add Payment"
+msgstr "Ajouter un paiement"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_select_ready_wizard
+msgid "Add Ready Payments"
+msgstr "Ajouter les paiements prêts"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "All payment lines must have a positive amount."
+msgstr "Toutes les lignes de paiement doivent avoir un montant positif."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Already applied documents cannot be selected."
+msgstr "Les documents déjà appliqués ne peuvent pas être sélectionnés."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Amount to apply cannot be negative."
+msgstr "Le montant à appliquer ne peut pas être négatif."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Amount to apply cannot exceed available amount."
+msgstr "Le montant à appliquer ne peut pas dépasser le montant disponible."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Amount to apply must be zero for already applied documents."
+msgstr "Le montant à appliquer doit être nul pour les documents déjà appliqués."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Amounts"
+msgstr "Montants"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_prepare_associated_line__line_type__applied
+msgid "Applied"
+msgstr "Appliqué"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__amount_to_apply
+msgid "Apply"
+msgstr "Appliquer"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__associated_deduction_amount
+msgid "Associated Deductions"
+msgstr "Déductions associées"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__associated_line_ids
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Associated Documents"
+msgstr "Documents associés"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__communication_auto
+msgid "Automatic Communication"
+msgstr "Communication automatique"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__amount_available
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_prepare_associated_line__line_type__available
+msgid "Available"
+msgstr "Disponible"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__available_amount
+msgid "Available Amount"
+msgstr "Montant disponible"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__available_move_info_ids
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__available_move_info_ids
+msgid "Available Move Info"
+msgstr "Informations comptables disponibles"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__available_partner_ids
+msgid "Available Partner"
+msgstr "Partenaire disponible"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__partner_bank
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Bank Account"
+msgstr "Compte bancaire"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,help:gica_sepa_payment.field_account_move_line__gica_sepa_partner_bank_id
+msgid ""
+"Bank Account Number to which the invoice will be paid. A Company bank "
+"account if this is a Customer Invoice or Vendor Credit Note, otherwise a "
+"Partner bank account number."
+msgstr "Numéro de compte bancaire sur lequel la facture sera payée. Un compte bancaire de la société s’il s’agit d’une facture client ou d’une note de crédit fournisseur, sinon un compte bancaire du partenaire."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__bank_journal_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__bank_journal_id
+msgid "Bank Journal"
+msgstr "Journal bancaire"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Bank execution date is required before posting."
+msgstr "La date d’exécution bancaire est obligatoire avant la comptabilisation."
+
+#. module: gica_sepa_payment
+#: model:ir.ui.menu,name:gica_sepa_payment.menu_gica_sepa_banks
+msgid "Banks"
+msgstr "Banques"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__base_amount_to_pay
+msgid "Base Amount to Pay"
+msgstr "Montant de base à payer"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__blocked
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__blocked
+msgid "Blocked"
+msgstr "Bloqué"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_bank_statement_line__gica_sepa_can_prepare
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_move__gica_sepa_can_prepare
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_payment__gica_sepa_can_prepare
+msgid "Can Prepare GICA SEPA"
+msgstr "Peut préparer GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_all_ready_wizard_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_manual_payment_wizard_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_select_ready_wizard_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__discount_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__discount_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__discount_amount
+msgid "Cash Discount"
+msgstr "Escompte"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_res_company__gica_sepa_cash_discount_account_id
+msgid "Cash Discount Account"
+msgstr "Compte d'escompte"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Cash discount cannot be negative."
+msgstr "L’escompte ne peut pas être négatif."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Cash discount must be lower than the residual amount."
+msgstr "L’escompte doit être inférieur au montant résiduel."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__communication
+msgid "Communication"
+msgstr "Communication"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__company_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__company_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__company_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__company_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__company_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__currency_id
+msgid "Company Currency"
+msgstr "Devise de la société"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_payment_envelope__state__confirmed
+msgid "Confirmed"
+msgstr "Confirmé"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__create_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__create_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__currency_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__currency_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__currency_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__currency_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__currency_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__document_date
+msgid "Date"
+msgstr "Date"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__deducted_amount
+msgid "Deducted Amount"
+msgstr "Montant déduit"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Discount"
+msgstr "Escompte"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__discount_deadline
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__discount_deadline
+msgid "Discount Deadline"
+msgstr "Date limite d’escompte"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__display_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__move_info_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__move_info_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__move_id
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_move_info_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Document"
+msgstr "Document"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_payment_envelope__state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__due_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__due_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__date_maturity
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__due_date
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Due Date"
+msgstr "Date d'échéance"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Each envelope line must be linked to an accounting line."
+msgstr "Chaque ligne d'enveloppe doit être liée à une ligne comptable."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_move_form_gica_sepa_payment
+msgid "Prepare SEPA Payment"
+msgstr "Paiement SEPA"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_move_form_gica_sepa_payment
+msgid "Edit SEPA Payment Info"
+msgstr "Infos SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__envelope_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__envelope_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__envelope_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__envelope_id
+msgid "Envelope"
+msgstr "Enveloppe"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__envelope_total_amount
+msgid "Envelope Total"
+msgstr "Total de l'enveloppe"
+
+#. module: gica_sepa_payment
+#: model:ir.ui.menu,name:gica_sepa_payment.menu_gica_sepa_envelope
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Envelopes"
+msgstr "Enveloppes"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__bank_execution_date
+msgid "Executed by Bank"
+msgstr "Exécuté par la banque"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__execution_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__envelope_execution_date
+msgid "Execution Date"
+msgstr "Date d'exécution"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Execution date is required before confirming the payment envelope."
+msgstr "La date d'exécution est obligatoire avant de confirmer l'enveloppe de paiement."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Execution date is required to generate the SEPA XML."
+msgstr "La date d'exécution est obligatoire pour générer le fichier XML SEPA."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Follow-up"
+msgstr "Relance"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_prepare_associated_line
+msgid "GICA SEPA Associated Document"
+msgstr "Document associé GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_move_line__gica_sepa_info_ids
+msgid "GICA SEPA Info"
+msgstr "Information GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_candidate
+msgid "GICA SEPA Payment Candidate"
+msgstr "Préparation de paiement GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_payment_envelope
+msgid "GICA SEPA Payment Envelope"
+msgstr "Enveloppe de paiement GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_payment_envelope_line
+msgid "GICA SEPA Payment Envelope Line"
+msgstr "Ligne d'enveloppe de paiement GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_bank_statement_line__gica_sepa_move_info_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_move__gica_sepa_move_info_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_payment__gica_sepa_move_info_id
+msgid "GICA SEPA Payment Info"
+msgstr "Information de paiement GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_move_info
+msgid "GICA SEPA Supplier Payment Info"
+msgstr "Information de paiement fournisseur GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_translation_mixin
+msgid "GICA SEPA Translation Mixin"
+msgstr "Mixin de traduction GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "General"
+msgstr "Général"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Generate XML"
+msgstr "Générer le XML"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Group By"
+msgstr "Regrouper par"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__envelope_amount
+msgid "In Envelopes"
+msgstr "Dans les enveloppes"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_candidate__prepare_status__draft
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__move_id
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__invoice_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__invoice_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__invoice_date
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Invoice Date"
+msgstr "Date de facture"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__invoice_total
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__invoice_total
+msgid "Invoice Total"
+msgstr "Total de la facture"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__account_journal_id
+msgid "Journal"
+msgstr "Journal"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_account_move
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__move_id
+msgid "Journal Entry"
+msgstr "Écriture comptable"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_account_move_line
+msgid "Journal Item"
+msgstr "Ligne comptable"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__write_uid
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_all_ready_wizard__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__write_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__move_line_id
+msgid "Line123"
+msgstr "Ligne123"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__line_ids
+msgid "Lines"
+msgstr "Lignes"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_candidate__prepare_status__blocked
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Litigation"
+msgstr "Litige"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__litigation_note
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__litigation_note
+msgid "Litigation Note"
+msgstr "Note de litige"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Mark as Executed"
+msgstr "Marquer comme exécuté"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Mark as Sent"
+msgstr "Marquer comme envoyé"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__move_line_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__move_line_id
+msgid "Move Line"
+msgstr "Ligne comptable"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_candidate__prepare_status__new
+msgid "New"
+msgstr "Nouveau"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "No PDF attachment found for this invoice."
+msgstr "Aucune pièce jointe PDF n'a été trouvée pour cette facture."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "No SEPA XML has been generated yet."
+msgstr "Aucun fichier XML SEPA n'a encore été généré."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "No accounting entry is linked to this payment envelope."
+msgstr "Aucune écriture comptable n'est liée à cette enveloppe de paiement."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "No bank journal is defined on this envelope."
+msgstr "Aucun journal bancaire n'est défini sur cette enveloppe."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "No matching payment line was found for %s."
+msgstr "Aucune ligne de paiement correspondante n'a été trouvée pour %s."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "No open supplier accounting line was found for this vendor bill."
+msgstr "Aucune ligne comptable fournisseur ouverte n'a été trouvée pour cette facture fournisseur."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__line_count
+msgid "Number of Payments"
+msgstr "Nombre de paiements"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "One of the accounting lines is already fully reconciled."
+msgstr "L'une des lignes comptables est déjà entièrement lettrée."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Only confirmed envelopes can be posted."
+msgstr "Seules les enveloppes confirmées peuvent être comptabilisées."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Only draft payment envelopes can be deleted."
+msgstr "Seules les enveloppes de paiement à l'état Brouillon peuvent être supprimées."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Only ready payment preparations can be added to an envelope."
+msgstr "Seules les préparations de paiement prêtes peuvent être ajoutées à une enveloppe."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Open PDF"
+msgstr "Ouvrir le PDF"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Open XML"
+msgstr "Ouvrir le XML"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Overdue > 30 days"
+msgstr "Échéance > 30 jours"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Overdue > 60 days"
+msgstr "Échéance > 60 jours"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Overdue > 7 days"
+msgstr "Échéance > 7 jours"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Overdue > 90 days"
+msgstr "Échéance > 90 jours"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__overdue_before
+msgid "Overdue Before"
+msgstr "Échéance avant"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__payment_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__payment_amount
+msgid "Payment Amount"
+msgstr "Montant du paiement"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Payment Envelope"
+msgstr "Enveloppe de paiement"
+
+#. module: gica_sepa_payment
+#: model:ir.actions.act_window,name:gica_sepa_payment.action_gica_sepa_envelope
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__envelope_line_ids
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__envelope_line_ids
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_tree
+msgid "Payment Envelopes"
+msgstr "Enveloppes de paiement"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Payment Line"
+msgstr "Ligne de paiement"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Payment Lines"
+msgstr "Lignes de paiement"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__payment_note
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__payment_note
+msgid "Payment Note"
+msgstr "Note de paiement"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_move_line__gica_sepa_payment_reference
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__payment_reference
+msgid "Payment Reference"
+msgstr "Référence du paiement"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Payment amount cannot exceed the available amount."
+msgstr "Le montant du paiement ne peut pas dépasser le montant disponible."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Payment amount must be positive."
+msgstr "Le montant du paiement doit être positif."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Payment line %s has no supplier."
+msgstr "La ligne de paiement %s n'a pas de fournisseur."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__envelope_line_count
+#: model:ir.ui.menu,name:gica_sepa_payment.menu_gica_sepa_payments
+msgid "Payments"
+msgstr "Paiements"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid ""
+"Please create a payment envelope manually and choose a SEPA Journal first."
+msgstr "Veuillez créer une enveloppe de paiement manuellement et choisir d'abord un journal SEPA."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Please select a document."
+msgstr "Veuillez sélectionner un document."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Post Accounting"
+msgstr "Comptabiliser"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__posted_date
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_payment_envelope__state__posted
+msgid "Posted"
+msgstr "Comptabilisé"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__move_info_id
+msgid "Preparation"
+msgstr "Préparation"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__prepare_status
+msgid "Preparation Status"
+msgstr "État de préparation"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Prepare"
+msgstr "Préparer"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_prepare_wizard
+msgid "Prepare GICA SEPA Payment"
+msgstr "Préparer un paiement GICA SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.actions.act_window,name:gica_sepa_payment.action_gica_sepa_candidate
+msgid "Prepare Supplier Payments"
+msgstr "Préparer les paiements fournisseurs"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Prepared"
+msgstr "Préparé"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__prepared_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__prepared_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__prepared_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__prepared_amount
+msgid "Prepared Amount"
+msgstr "Montant préparé"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__preparation_ready
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__ready
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__ready
+#: model:ir.model.fields.selection,name:gica_sepa_payment.selection__gica_sepa_candidate__prepare_status__ready
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Ready"
+msgstr "Prêt"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_account_move_line__gica_sepa_partner_bank_id
+msgid "Recipient Bank"
+msgstr "Banque du bénéficiaire"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Reset to Draft"
+msgstr "Remettre en brouillon"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Residual"
+msgstr "Résiduel"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__amount_residual
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__amount_residual
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__amount_residual
+msgid "Residual Amount"
+msgstr "Montant résiduel"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Revise"
+msgstr "Réviser"
+
+#. module: gica_sepa_payment
+#: model:ir.ui.menu,name:gica_sepa_payment.menu_gica_sepa_root
+msgid "SEPA"
+msgstr "SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model,name:gica_sepa_payment.model_gica_sepa_bank_profile
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_bank_profile_form
+msgid "SEPA Bank Profile"
+msgstr "Profil bancaire SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.actions.act_window,name:gica_sepa_payment.action_gica_sepa_bank_profile
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_bank_profile_tree
+msgid "SEPA Bank Profiles"
+msgstr "Profils bancaires SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__code
+msgid "SEPA Code"
+msgstr "Code SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__sepa_profile_id
+msgid "SEPA Journal"
+msgstr "Journal SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__xml_attachment_id
+msgid "SEPA XML"
+msgstr "XML SEPA"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "SEPA XML can only be generated in EUR."
+msgstr "Le fichier XML SEPA ne peut être généré qu'en EUR."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_prepare_wizard_form
+msgid "Save SEPA Payment Info"
+msgstr "Enregistrer les informations de paiement SEPA"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__search_text
+msgid "Search"
+msgstr "Rechercher"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__selected
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_select_ready_wizard_form
+msgid "Select"
+msgstr "Sélectionner"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_select_ready_wizard_form
+msgid "Select Ready Payment Lines"
+msgstr "Sélectionner les lignes de paiement prêtes"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__sent_date
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__sent_date_display
+msgid "Sent to Bank"
+msgstr "Envoyé à la banque"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_bank_profile__sequence_id
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Several matching payment lines were found for %s."
+msgstr "Plusieurs lignes de paiement correspondantes ont été trouvées pour %s."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__state
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__envelope_state
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__state
+msgid "State"
+msgstr "État"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Status Dates"
+msgstr "Dates de statut"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__partner_name
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__partner_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__partner_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_select_ready_wizard__partner_id
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Supplier %s has no BIC."
+msgstr "Le fournisseur %s ne possède pas de BIC."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Supplier %s has no IBAN."
+msgstr "Le fournisseur %s ne possède pas d'IBAN."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "Supplier %s has no bank account."
+msgstr "Le fournisseur %s ne possède pas de compte bancaire."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__move_line_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__move_line_id
+msgid "Supplier Move Line"
+msgstr "Ligne comptable fournisseur"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "Supplier Payment Candidates"
+msgstr "Préparations de paiements fournisseurs"
+
+#. module: gica_sepa_payment
+#: model:ir.actions.act_window,name:gica_sepa_payment.action_gica_sepa_move_info
+msgid "Supplier Payments"
+msgstr "Paiements fournisseurs"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Technical"
+msgstr "Technique"
+
+#. module: gica_sepa_payment
+#: model:ir.model.constraint,message:gica_sepa_payment.constraint_gica_sepa_bank_profile_code_company_unique
+msgid "The SEPA code must be unique per company."
+msgstr "Le code SEPA doit être unique par société."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "The SEPA journal has no bank account."
+msgstr "Le journal SEPA ne possède pas de compte bancaire."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "The accounting line must be on a reconcilable account."
+msgstr "La ligne comptable doit appartenir à un compte lettrable."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "The bank journal has no default account."
+msgstr "Le journal bancaire ne possède pas de compte par défaut."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "The company bank account has no BIC."
+msgstr "Le compte bancaire de la société ne possède pas de BIC."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "The company bank account has no IBAN."
+msgstr "Le compte bancaire de la société ne possède pas d'IBAN."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,help:gica_sepa_payment.field_account_move_line__gica_sepa_payment_reference
+msgid "The payment reference to set on journal items."
+msgstr "La référence de paiement à définir sur les lignes comptables."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,help:gica_sepa_payment.field_gica_sepa_move_info__amount_residual
+msgid ""
+"The residual amount on a journal item expressed in the company currency."
+msgstr "Le montant résiduel d'une ligne comptable exprimé dans la devise de la société."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "There is no remaining amount to pay for this document."
+msgstr "Il ne reste plus aucun montant à payer pour ce document."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_all_ready_wizard_form
+msgid ""
+"This action is only allowed when the envelope does not contain any payment "
+"lines yet."
+msgstr "Cette action n'est autorisée que lorsque l'enveloppe ne contient encore aucune ligne de paiement."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_add_all_ready_wizard_form
+msgid ""
+"This action will add all ready payment lines for the current company to this"
+" envelope."
+msgstr "Cette action ajoutera toutes les lignes de paiement prêtes de la société courante à cette enveloppe."
+
+#. module: gica_sepa_payment
+#: model:ir.model.constraint,message:gica_sepa_payment.constraint_gica_sepa_payment_envelope_line_envelope_move_info_unique
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "This document is already present in this payment envelope."
+msgstr "Ce document est déjà présent dans cette enveloppe de paiement."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid ""
+"This envelope already contains payment lines. Use Select Ready Payments to "
+"add a group, or remove the existing lines first."
+msgstr "Cette enveloppe contient déjà des lignes de paiement. Utilisez « Sélectionner les paiements prêts » pour ajouter un groupe, ou supprimez d'abord les lignes existantes."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "This envelope is already linked to an accounting entry."
+msgstr "Cette enveloppe est déjà liée à une écriture comptable."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,help:gica_sepa_payment.field_gica_sepa_move_info__due_date
+#: model:ir.model.fields,help:gica_sepa_payment.field_gica_sepa_prepare_wizard__due_date
+msgid ""
+"This field is used for payable and receivable journal entries. You can put "
+"the limit date for the payment of this line."
+msgstr "Ce champ est utilisé pour les écritures comptables fournisseurs et clients. Vous pouvez y indiquer la date limite de paiement de cette ligne."
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_add_manual_payment_wizard__available_amount
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__amount_to_pay
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__amount_residual
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_wizard__amount_to_pay
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "To Pay"
+msgstr "À payer"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_search
+msgid "To Prepare"
+msgstr "À préparer"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope_line__invoice_total
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__amount_total
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_payment_envelope_form
+msgid "Total"
+msgstr "Total"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__total_amount
+msgid "Total Amount"
+msgstr "Montant total"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Total Invoice"
+msgstr "Total de la facture"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Total Prepared"
+msgstr "Total préparé"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Total Residual"
+msgstr "Total résiduel"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Total To Pay"
+msgstr "Total à payer"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.view_gica_sepa_candidate_tree
+msgid "Total Discount"
+msgstr "Total des escomptes"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__line_type
+msgid "Type"
+msgstr "Type"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__amount_used
+msgid "Used"
+msgstr "Utilisé"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_candidate__move_id
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_move_info__move_id
+msgid "Vendor Bill"
+msgstr "Facture fournisseur"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_prepare_associated_line__wizard_id
+msgid "Wizard"
+msgstr "Assistant"
+
+#. module: gica_sepa_payment
+#: model:ir.model.fields,field_description:gica_sepa_payment.field_gica_sepa_payment_envelope__xml_generated_date
+msgid "XML Generated"
+msgstr "XML généré"
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You can only add lines when the envelope is in Draft state."
+msgstr "Vous ne pouvez ajouter des lignes que lorsque l'enveloppe est à l'état Brouillon."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You can only add payment lines to a draft envelope."
+msgstr "Vous ne pouvez ajouter des lignes de paiement qu'à une enveloppe à l'état Brouillon."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You can only delete lines when the envelope is in Draft state."
+msgstr "Vous ne pouvez supprimer des lignes que lorsque l'enveloppe est à l'état Brouillon."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You can only generate XML for a confirmed envelope."
+msgstr "Vous ne pouvez générer le XML que pour une enveloppe confirmée."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You can only modify lines when the envelope is in Draft state."
+msgstr "Vous ne pouvez modifier des lignes que lorsque l'enveloppe est à l'état Brouillon."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You can only post an envelope after bank execution."
+msgstr "Vous ne pouvez comptabiliser une enveloppe qu'après son exécution par la banque."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You cannot confirm an empty payment envelope."
+msgstr "Vous ne pouvez pas confirmer une enveloppe de paiement vide."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid ""
+"You cannot delete this SEPA Journal because it is already used by payment "
+"envelopes."
+msgstr "Vous ne pouvez pas supprimer ce journal SEPA car il est déjà utilisé par des enveloppes de paiement."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You cannot generate XML for an empty envelope."
+msgstr "Vous ne pouvez pas générer le XML pour une enveloppe vide."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid ""
+"You cannot modify this SEPA Journal because it is already used by payment "
+"envelopes."
+msgstr "Vous ne pouvez pas modifier ce journal SEPA car il est déjà utilisé par des enveloppes de paiement."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You cannot post an empty payment envelope."
+msgstr "Vous ne pouvez pas comptabiliser une enveloppe de paiement vide."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid ""
+"You cannot reset an envelope to draft when it has been executed by the bank "
+"or posted in accounting."
+msgstr "Vous ne pouvez pas remettre une enveloppe à l'état Brouillon lorsqu'elle a été exécutée par la banque ou comptabilisée."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You must generate the XML before marking the envelope as sent."
+msgstr "Vous devez générer le XML avant de marquer l'enveloppe comme envoyée."
+
+#. module: gica_sepa_payment
+#: model_terms:ir.ui.view,arch_db:gica_sepa_payment.gica_sepa_i18n_terms
+msgid "You must mark the envelope as sent before marking it as executed."
+msgstr "Vous devez marquer l'enveloppe comme envoyée avant de la marquer comme exécutée."

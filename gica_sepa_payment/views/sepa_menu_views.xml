@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_gica_sepa_move_info" model="ir.actions.act_window">
+        <field name="name">Supplier Payments</field>
+        <field name="res_model">gica.sepa.move.info</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_gica_sepa_envelope" model="ir.actions.act_window">
+        <field name="name">Payment Envelopes</field>
+        <field name="res_model">gica.sepa.payment.envelope</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Root menu -->
+    <menuitem id="menu_gica_sepa_root"
+          name="SEPA"
+          parent="account.menu_finance"
+          sequence="90"/>
+
+    <menuitem id="menu_gica_sepa_banks"
+              name="Banks"
+              parent="menu_gica_sepa_root"
+              action="action_gica_sepa_bank_profile"
+              sequence="10"/>
+
+    <menuitem id="menu_gica_sepa_payments"
+              name="Payments"
+              parent="menu_gica_sepa_root"
+              action="action_gica_sepa_candidate"
+              sequence="20"/>
+
+    <menuitem id="menu_gica_sepa_envelope"
+              name="Envelopes"
+              parent="menu_gica_sepa_root"
+              action="action_gica_sepa_envelope"
+              sequence="30"/>
+
+</odoo>

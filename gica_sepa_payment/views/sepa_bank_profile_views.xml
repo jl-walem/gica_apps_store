@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_gica_sepa_bank_profile_tree" model="ir.ui.view">
+        <field name="name">gica.sepa.bank.profile.tree</field>
+        <field name="model">gica.sepa.bank.profile</field>
+        <field name="arch" type="xml">
+            <tree string="SEPA Bank Profiles">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="company_id"/>
+                <field name="bank_journal_id"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_gica_sepa_bank_profile_form" model="ir.ui.view">
+        <field name="name">gica.sepa.bank.profile.form</field>
+        <field name="model">gica.sepa.bank.profile</field>
+        <field name="arch" type="xml">
+            <form string="SEPA Bank Profile">
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="company_id"/>
+                        <field name="bank_journal_id"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_gica_sepa_bank_profile" model="ir.actions.act_window">
+        <field name="name">SEPA Bank Profiles</field>
+        <field name="res_model">gica.sepa.bank.profile</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
