@@ -6,9 +6,7 @@ Prepare, review and prioritise supplier payments according to your available cas
 
 Designed for organisations that want to optimise cash flow while keeping full control over supplier payments.
 
-<p align="center">
-    <img src="00_overview.png" alt="Overview" width="900"/>
-</p>
+![Cover](00_overview.png)
 
 ---
 
