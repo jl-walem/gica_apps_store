@@ -6,7 +6,7 @@
     "version": "17.0.1.0.1",
     "category": "Accounting",
     "author": "Eurologiciel",
-    "website": "https://www.eurologiciel.be",
+    "website": "https://www.eurologiciel.be/odoo",
     "license": "LGPL-3",
     "depends": [
         "account",

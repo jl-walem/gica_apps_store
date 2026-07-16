@@ -16,8 +16,8 @@ Main features:
 - Vendor bill creation from UBL documents
 - Multi-company support
 """,
-    'author': 'Jean-Luc Walem',
-    'website': 'https://www.eurologiciel.be/odoo/',
+    'author': 'Eurologiciel',
+    'website': 'https://www.eurologiciel.be/odoo',
     'category': 'Accounting',
     'license': 'LGPL-3',
 

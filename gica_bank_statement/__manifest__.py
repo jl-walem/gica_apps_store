@@ -14,8 +14,8 @@ Main features:
 - Compatible with Odoo reconciliation
 - Designed for Belgian accountants and SMEs
 """,
-    'author': 'Jean-Luc Walem',
-    'website': 'https://github.com/jl-walem/gica_bank_statement',
+    'author': 'Eurologiciel',
+    'website': 'https://www.eurologiciel.be/odoo',
     'category': 'Accounting',
     'license': 'LGPL-3',
 
