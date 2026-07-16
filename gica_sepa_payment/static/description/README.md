@@ -1,14 +1,18 @@
 # GICA SEPA Payment
 
-Supplier payment preparation and SEPA Credit Transfer management for Odoo Community.
+Supplier payment preparation and SEPA Credit Transfer management for Odoo.
 
 Prepare, review and prioritise supplier payments according to your available cash before generating a standard SEPA Credit Transfer file.
 
-![Cover](cover.png)
+Designed for organisations that want to optimise cash flow while keeping full control over supplier payments.
+
+<p align="center">
+    <img src="00_overview.png" alt="Overview" width="900"/>
+</p>
 
 ---
 
-## Build the best payment batch according to your available cash
+## Build the best payment batch based on your available cash
 
 When available cash is limited, paying every due invoice automatically is not always the best option.
 
@@ -90,7 +94,7 @@ Once a payment envelope has been validated, GICA SEPA Payment manages the comple
 
 A standard **SEPA Credit Transfer** file (`pain.001.001.03`) is generated and attached to the payment envelope for complete traceability.
 
-The payment envelope records every processing step:
+The payment envelope keeps track of every processing step:
 
 - XML generation;
 - transmission to the bank;
@@ -140,7 +144,7 @@ Install the complete **Accounting** application.
 
 ### Odoo Community
 
-The complete Accounting interface must be available.
+The complete Accounting interface should be available.
 
 If necessary, the OCA module **account_usability** (or an equivalent solution) can be installed to expose the complete Accounting menus.
 
@@ -157,11 +161,11 @@ is required.
 ## Why GICA SEPA Payment?
 
 - Cash-oriented supplier payment preparation
+- Payment envelopes
 - Partial payments
 - Credit notes
 - Supplier advances
 - Litigation management
-- Payment envelopes
 - Standard SEPA Credit Transfer (pain.001.001.03)
 - One accounting entry per payment batch
 - Standard Odoo reconciliation
