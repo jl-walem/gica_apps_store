@@ -1,591 +1,300 @@
-<style>
-    .gica-page {
-        color: #2f2f2f;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .gica-hero,
-    .gica-section,
-    .gica-footer-section {
-        padding: 64px 24px;
-    }
-
-    .gica-hero {
-        background: linear-gradient(180deg, #ffffff 0%, #f7f4f7 100%);
-        text-align: center;
-    }
-
-    .gica-section-alt {
-        background: #f8f8f8;
-    }
-
-    .gica-container {
-        max-width: 1180px;
-        margin: 0 auto;
-    }
-
-    .gica-narrow {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .gica-title {
-        margin: 0 0 14px;
-        color: #714b67;
-        font-size: 36px;
-        line-height: 1.2;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    .gica-subtitle {
-        margin: 0 auto 24px;
-        max-width: 920px;
-        color: #4a4a4a;
-        font-size: 21px;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .gica-lead {
-        margin: 0 auto 32px;
-        max-width: 900px;
-        color: #555555;
-        font-size: 17px;
-        line-height: 1.8;
-        text-align: center;
-    }
-
-    .gica-text {
-        color: #444444;
-        font-size: 16px;
-        line-height: 1.75;
-    }
-
-    .gica-text p {
-        margin: 0 0 18px;
-    }
-
-    .gica-image-frame {
-        margin: 30px auto 0;
-        padding: 10px;
-        background: #ffffff;
-        border: 1px solid #e3e3e3;
-        border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    .gica-image-frame img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 7px;
-    }
-
-    .gica-grid-2,
-    .gica-grid-3 {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 22px;
-        margin-top: 30px;
-    }
-
-    .gica-grid-2 > div {
-        flex: 1 1 320px;
-    }
-
-    .gica-grid-3 > div {
-        flex: 1 1 250px;
-    }
-
-    .gica-card {
-        box-sizing: border-box;
-        min-height: 100%;
-        padding: 24px;
-        background: #ffffff;
-        border: 1px solid #e5e5e5;
-        border-radius: 10px;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-    }
-
-    .gica-card h3 {
-        margin: 0 0 10px;
-        color: #714b67;
-        font-size: 21px;
-        line-height: 1.3;
-    }
-
-    .gica-card p {
-        margin: 0;
-        color: #555555;
-        font-size: 15px;
-        line-height: 1.65;
-    }
-
-    .gica-feature-list {
-        margin: 18px 0 0;
-        padding-left: 22px;
-        color: #444444;
-        font-size: 16px;
-        line-height: 1.8;
-    }
-
-    .gica-feature-list li {
-        margin-bottom: 6px;
-    }
-
-    .gica-highlight {
-        margin: 30px auto 0;
-        padding: 18px 22px;
-        max-width: 820px;
-        background: #f3edf2;
-        border-left: 4px solid #714b67;
-        border-radius: 8px;
-        color: #5a4053;
-        font-size: 18px;
-        line-height: 1.55;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .gica-step {
-        display: inline-block;
-        margin-bottom: 14px;
-        padding: 6px 12px;
-        background: #714b67;
-        border-radius: 999px;
-        color: #ffffff;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    }
-
-    .gica-requirement {
-        margin-top: 18px;
-        padding: 20px;
-        background: #ffffff;
-        border: 1px solid #e2e2e2;
-        border-radius: 10px;
-    }
-
-    .gica-requirement strong {
-        display: block;
-        margin-bottom: 7px;
-        color: #714b67;
-        font-size: 17px;
-    }
-
-    .gica-summary {
-        background: #714b67;
-        color: #ffffff;
-    }
-
-    .gica-summary .gica-title,
-    .gica-summary .gica-subtitle,
-    .gica-summary .gica-text,
-    .gica-summary .gica-feature-list {
-        color: #ffffff;
-    }
-
-    .gica-summary .gica-card {
-        background: rgba(255, 255, 255, 0.08);
-        border-color: rgba(255, 255, 255, 0.22);
-        box-shadow: none;
-    }
-
-    .gica-summary .gica-card h3,
-    .gica-summary .gica-card p {
-        color: #ffffff;
-    }
-
-    @media (max-width: 768px) {
-        .gica-hero,
-        .gica-section,
-        .gica-footer-section {
-            padding: 44px 16px;
-        }
-
-        .gica-title {
-            font-size: 29px;
-        }
-
-        .gica-subtitle {
-            font-size: 19px;
-        }
-
-        .gica-lead,
-        .gica-text,
-        .gica-feature-list {
-            font-size: 15px;
-        }
-
-        .gica-image-frame {
-            padding: 6px;
-        }
-    }
-</style>
-
-<div class="gica-page">
-
-    <!-- HERO -->
-    <section class="gica-hero">
-        <div class="gica-container">
-            <h1 class="gica-title">SEPA Supplier Payment Management</h1>
-
-            <p class="gica-subtitle">
-                Prepare, prioritise and group supplier payments according to your available cash.
-            </p>
-
-            <p class="gica-lead">
-                GICA SEPA Payment helps accountants decide what to pay, how much to pay
-                and when to pay it, before generating a standard SEPA Credit Transfer file.
-                The complete process remains fully integrated with standard Odoo Accounting.
-            </p>
-
-            <div class="gica-image-frame">
-                <img
-                    src="00_overview.png"
-                    alt="Build the best supplier payment batch according to your available cash"
-                />
-            </div>
-        </div>
-    </section>
-
-    <!-- VALUE PROPOSITION -->
-    <section class="gica-section">
-        <div class="gica-container">
-            <div class="gica-narrow">
-                <span class="gica-step">Why</span>
-                <h2 class="gica-title">Build the best payment batch according to your available cash</h2>
-
-                <p class="gica-subtitle">
-                    When available cash is limited, paying every due invoice automatically
-                    is not always the best option.
-                </p>
-
-                <div class="gica-grid-2">
-                    <div class="gica-card">
-                        <h3>Prioritise what matters</h3>
-                        <ul class="gica-feature-list">
-                            <li>Prioritise strategic suppliers</li>
-                            <li>Select invoices overdue before a chosen date</li>
-                            <li>Remove non-priority payments</li>
-                            <li>Exclude disputed invoices from payment batches</li>
-                        </ul>
-                    </div>
-
-                    <div class="gica-card">
-                        <h3>Stay within your cash limit</h3>
-                        <ul class="gica-feature-list">
-                            <li>Adjust individual payment amounts</li>
-                            <li>Handle partial payments and remaining balances</li>
-                            <li>Monitor the envelope total in real time</li>
-                            <li>Document disputes with dedicated follow-up notes</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="gica-highlight">
-                    The payment envelope acts as a flexible working basket that can be
-                    adjusted until it matches your available cash and business priorities.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- QUICK CONFIGURATION -->
-    <section class="gica-section gica-section-alt">
-        <div class="gica-container">
-            <span class="gica-step">Configure</span>
-            <h2 class="gica-title">Quick configuration</h2>
-
-            <p class="gica-subtitle">
-                Configure one SEPA Bank Profile for each bank account and start preparing
-                supplier payments immediately.
-            </p>
-
-            <div class="gica-image-frame">
-                <img
-                    src="01_quick_configuration.png"
-                    alt="SEPA bank profiles and the three-step workflow"
-                />
-            </div>
-
-            <div class="gica-grid-3">
-                <div class="gica-card">
-                    <h3>Banks</h3>
-                    <p>
-                        Link each SEPA Bank Profile to a standard Odoo bank journal.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Payments</h3>
-                    <p>
-                        Review invoices and prepare the amounts to be paid.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Envelopes</h3>
-                    <p>
-                        Build, confirm, export and post supplier payment batches.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PREPARE SUPPLIER PAYMENTS -->
-    <section class="gica-section">
-        <div class="gica-container">
-            <span class="gica-step">Prepare</span>
-            <h2 class="gica-title">Prepare supplier payments</h2>
-
-            <p class="gica-subtitle">
-                Review supplier invoices before creating payment envelopes.
-            </p>
-
-            <div class="gica-image-frame">
-                <img
-                    src="02_prepare_supplier_payments.png"
-                    alt="Prepare supplier payments"
-                />
-            </div>
-
-            <div class="gica-narrow gica-text" style="margin-top: 30px;">
-                <p>
-                    The preparation list gives accountants a complete overview of all
-                    invoices eligible for payment, together with outstanding balances,
-                    discounts, prepared amounts and their current preparation status.
-                </p>
-
-                <p>
-                    Each invoice follows a clear workflow:
-                    <strong>Prepare</strong>,
-                    <strong>Ready</strong>,
-                    <strong>Revise</strong> or
-                    <strong>Litigation</strong>.
-                </p>
-            </div>
-
-            <div class="gica-highlight">
-                Prepare, review and prioritise payments before sending them to the bank.
-            </div>
-        </div>
-    </section>
-
-    <!-- COMPLETE PAYMENT REVIEW -->
-    <section class="gica-section gica-section-alt">
-        <div class="gica-container">
-            <span class="gica-step">Review</span>
-            <h2 class="gica-title">Complete payment review</h2>
-
-            <p class="gica-subtitle">
-                Everything you need to review a supplier payment in one place.
-            </p>
-
-            <div class="gica-image-frame">
-                <img
-                    src="03_complete_payment_review.png"
-                    alt="Complete payment review"
-                />
-            </div>
-
-            <div class="gica-grid-3">
-                <div class="gica-card">
-                    <h3>General</h3>
-                    <p>
-                        Outstanding balances, discounts, litigation management,
-                        payment notes and prepared amounts.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Associated Documents</h3>
-                    <p>
-                        Automatic handling of credit notes, supplier advances
-                        and previous payments.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Envelopes</h3>
-                    <p>
-                        Complete traceability of previous payment envelopes
-                        and partial payments.
-                    </p>
-                </div>
-            </div>
-
-            <div class="gica-highlight">
-                Better information. Better decisions. Better cash flow.
-            </div>
-        </div>
-    </section>
-
-    <!-- COMPLETE PAYMENT WORKFLOW -->
-    <section class="gica-section">
-        <div class="gica-container">
-            <span class="gica-step">Process</span>
-            <h2 class="gica-title">Complete payment workflow</h2>
-
-            <p class="gica-subtitle">
-                From SEPA XML generation to accounting posting.
-            </p>
-
-            <div class="gica-image-frame">
-                <img
-                    src="04_complete_payment_workflow.png"
-                    alt="Complete payment workflow"
-                />
-            </div>
-
-            <div class="gica-grid-2">
-                <div class="gica-card">
-                    <h3>Standard SEPA XML</h3>
-                    <p>
-                        Generate a standard SEPA Credit Transfer file
-                        (<strong>pain.001.001.03</strong>) and keep it attached
-                        to the payment envelope.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Full workflow tracking</h3>
-                    <p>
-                        Record XML generation, transmission to the bank,
-                        bank execution and accounting posting.
-                    </p>
-                </div>
-            </div>
-
-            <div class="gica-highlight">
-                One workflow. Complete traceability.
-            </div>
-        </div>
-    </section>
-
-    <!-- ACCOUNTING ENTRY -->
-    <section class="gica-section gica-section-alt">
-        <div class="gica-container">
-            <span class="gica-step">Account</span>
-            <h2 class="gica-title">One payment batch. One accounting entry.</h2>
-
-            <p class="gica-subtitle">
-                Complete traceability with standard Odoo Accounting.
-            </p>
-
-            <div class="gica-image-frame">
-                <img
-                    src="05_one_payment_batch_one_accounting_entry.png"
-                    alt="One payment batch, one accounting entry"
-                />
-            </div>
-
-            <div class="gica-grid-3">
-                <div class="gica-card">
-                    <h3>Single accounting entry</h3>
-                    <p>
-                        Create one accounting entry for the complete payment envelope.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Individual supplier lines</h3>
-                    <p>
-                        Keep every supplier payment individually traceable.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Standard reconciliation</h3>
-                    <p>
-                        Reconcile supplier invoices using Odoo's native accounting mechanism.
-                    </p>
-                </div>
-            </div>
-
-            <div class="gica-highlight">
-                Native Odoo accounting. Complete traceability.
-            </div>
-        </div>
-    </section>
-
-    <!-- MOBILE AND REQUIREMENTS -->
-    <section class="gica-section">
-        <div class="gica-container">
-            <div class="gica-grid-2">
-                <div class="gica-card">
-                    <h3>Mobile access</h3>
-                    <p>
-                        The module can be accessed through the standard Odoo web interface
-                        on mobile devices. Mobile access is especially useful for reviewing
-                        envelopes, checking workflow status and validating processing steps.
-                        Desktop use remains recommended for payment preparation because of
-                        the amount of accounting information displayed.
-                    </p>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Requirements and compatibility</h3>
-
-                    <div class="gica-requirement">
-                        <strong>Odoo Enterprise</strong>
-                        Install the complete Accounting application.
-                    </div>
-
-                    <div class="gica-requirement">
-                        <strong>Odoo Community</strong>
-                        Ensure that the complete Accounting interface is available.
-                        If necessary, this can be provided by the OCA module
-                        <code>account_usability</code> or an equivalent solution.
-                    </div>
-
-                    <div class="gica-requirement">
-                        <strong>Dependency</strong>
-                        The module itself depends only on the standard Odoo
-                        <code>account</code> module.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SUMMARY -->
-    <section class="gica-footer-section gica-summary">
-        <div class="gica-container">
-            <h2 class="gica-title">Why choose GICA SEPA Payment?</h2>
-
-            <p class="gica-subtitle">
-                A complete supplier payment preparation workflow built on standard Odoo Accounting.
-            </p>
-
-            <div class="gica-grid-2">
-                <div class="gica-card">
-                    <h3>Payment preparation</h3>
-                    <ul class="gica-feature-list">
-                        <li>Cash-oriented payment preparation</li>
-                        <li>Partial payments and remaining balances</li>
-                        <li>Credit notes and supplier advances</li>
-                        <li>Litigation management</li>
-                        <li>Payment envelopes</li>
-                    </ul>
-                </div>
-
-                <div class="gica-card">
-                    <h3>Accounting and traceability</h3>
-                    <ul class="gica-feature-list">
-                        <li>Standard SEPA XML pain.001.001.03</li>
-                        <li>One accounting entry per payment batch</li>
-                        <li>Standard Odoo reconciliation</li>
-                        <li>Complete workflow tracking</li>
-                        <li>Full audit trail</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GICA SEPA Payment</title>
+</head>
+<body>
+
+<section>
+    <h1>GICA SEPA Payment</h1>
+
+    <p><strong>Supplier payment preparation and SEPA Credit Transfer management for Odoo.</strong></p>
+
+    <p>
+        Prepare, review and prioritise supplier payments based on your available cash
+        before generating a standard SEPA Credit Transfer file.
+    </p>
+
+    <p>
+        Designed for organisations that want to optimise cash flow while keeping full
+        control over supplier payments.
+    </p>
+
+    <p>
+        <img src="00_overview.png"
+             alt="GICA SEPA Payment overview"
+             style="display:block; max-width:100%; height:auto; margin:24px auto;">
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Build the best payment batch based on your available cash</h2>
+
+    <p>
+        When available cash is limited, paying every due invoice automatically is not
+        always the best option.
+    </p>
+
+    <p>With GICA SEPA Payment you can:</p>
+
+    <ul>
+        <li>prioritise strategic suppliers;</li>
+        <li>select invoices overdue before a chosen date;</li>
+        <li>exclude disputed invoices from payment batches;</li>
+        <li>document disputes with dedicated follow-up notes;</li>
+        <li>remove non-priority payments;</li>
+        <li>adjust individual payment amounts;</li>
+        <li>handle partial payments and remaining balances;</li>
+        <li>monitor the payment envelope total in real time;</li>
+        <li>generate a standard SEPA Credit Transfer file when the payment batch is ready.</li>
+    </ul>
+
+    <p>
+        The payment envelope acts as a flexible working basket that can be adjusted until
+        it matches your available cash and business priorities.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Quick configuration</h2>
+
+    <p>
+        <img src="01_quick_configuration.png"
+             alt="Quick configuration"
+             style="display:block; max-width:100%; height:auto; margin:24px auto;">
+    </p>
+
+    <p>
+        Configure one SEPA Bank Profile for each bank account and start preparing supplier
+        payments immediately.
+    </p>
+
+    <p>The module provides a simple three-step workflow:</p>
+
+    <ol>
+        <li><strong>Bank Profiles</strong> – configure SEPA bank profiles linked to standard Odoo bank journals.</li>
+        <li><strong>Supplier Payments</strong> – review and prepare supplier payments.</li>
+        <li><strong>Payment Envelopes</strong> – build, confirm, export and post payment batches.</li>
+    </ol>
+</section>
+
+<hr>
+
+<section>
+    <h2>Prepare supplier payments</h2>
+
+    <p>
+        <img src="02_prepare_supplier_payments.png"
+             alt="Prepare supplier payments"
+             style="display:block; max-width:100%; height:auto; margin:24px auto;">
+    </p>
+
+    <p>
+        Review all supplier invoices eligible for payment before creating a payment envelope.
+    </p>
+
+    <p>The preparation list provides an overview of outstanding invoices together with:</p>
+
+    <ul>
+        <li>outstanding balances;</li>
+        <li>discounts;</li>
+        <li>prepared amounts;</li>
+        <li>preparation status.</li>
+    </ul>
+
+    <p>Each invoice follows a simple workflow:</p>
+
+    <ul>
+        <li><strong>Prepare</strong></li>
+        <li><strong>Ready</strong></li>
+        <li><strong>Revise</strong></li>
+        <li><strong>Litigation</strong></li>
+    </ul>
+
+    <p>
+        This helps accountants organise and prioritise supplier payments before creating
+        the final payment batch.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Complete payment review</h2>
+
+    <p>
+        <img src="03_complete_payment_review.png"
+             alt="Complete payment review"
+             style="display:block; max-width:100%; height:auto; margin:24px auto;">
+    </p>
+
+    <p>
+        The <strong>Prepare SEPA Payment</strong> wizard centralises everything required
+        to validate a supplier payment before it is included in a payment envelope.
+    </p>
+
+    <p>The wizard combines three complementary views:</p>
+
+    <ul>
+        <li><strong>General</strong> – outstanding balances, discounts, litigation management, payment notes and prepared amounts.</li>
+        <li><strong>Associated Documents</strong> – automatic handling of credit notes, supplier advances and previous payments.</li>
+        <li><strong>Envelopes</strong> – complete traceability of previous payment envelopes and partial payments.</li>
+    </ul>
+
+    <p>
+        Bringing all relevant information together helps accountants make informed payment
+        decisions while maintaining complete traceability.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Complete payment workflow</h2>
+
+    <p>
+        <img src="04_complete_payment_workflow.png"
+             alt="Complete payment workflow"
+             style="display:block; max-width:100%; height:auto; margin:24px auto;">
+    </p>
+
+    <p>
+        Once a payment envelope has been validated, GICA SEPA Payment manages the complete
+        payment workflow.
+    </p>
+
+    <p>
+        A standard <strong>SEPA Credit Transfer</strong> file
+        (<code>pain.001.001.03</code>) is generated and attached to the payment envelope
+        for complete traceability.
+    </p>
+
+    <p>The payment envelope keeps track of every processing step:</p>
+
+    <ul>
+        <li>XML generation;</li>
+        <li>transmission to the bank;</li>
+        <li>bank execution;</li>
+        <li>accounting posting.</li>
+    </ul>
+
+    <p>
+        The workflow status provides complete visibility throughout the payment lifecycle.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>One payment batch. One accounting entry.</h2>
+
+    <p>
+        <img src="05_one_payment_batch_one_accounting_entry.png"
+             alt="One payment batch. One accounting entry."
+             style="display:block; max-width:100%; height:auto; margin:24px auto;">
+    </p>
+
+    <p>
+        Once the payment envelope has been executed by the bank, GICA SEPA Payment creates
+        a single accounting entry for the complete payment batch.
+    </p>
+
+    <p>
+        Each supplier payment generates its own payable line while the bank account is
+        credited only once for the total amount of the payment envelope.
+    </p>
+
+    <p>
+        The accounting entry remains fully linked to its originating payment envelope,
+        ensuring complete traceability between supplier invoices, payment batches and
+        accounting records.
+    </p>
+
+    <p>
+        Reconciliation relies entirely on the standard Odoo accounting mechanism.
+    </p>
+
+    <p><strong>No parallel accounting.</strong></p>
+    <p><strong>No proprietary reconciliation process.</strong></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Mobile access</h2>
+
+    <p>
+        The module can be accessed through the standard Odoo web interface on mobile devices.
+    </p>
+
+    <p>Mobile access is particularly useful for:</p>
+
+    <ul>
+        <li>reviewing payment envelopes;</li>
+        <li>checking workflow status;</li>
+        <li>validating processing steps.</li>
+    </ul>
+
+    <p>
+        Because of the amount of accounting information displayed, desktop use remains
+        recommended for payment preparation.
+    </p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Requirements</h2>
+
+    <h3>Odoo Enterprise</h3>
+
+    <p>Install the complete <strong>Accounting</strong> application.</p>
+
+    <h3>Odoo Community</h3>
+
+    <p>The complete Accounting interface should be available.</p>
+
+    <p>
+        If necessary, the OCA module <strong>account_usability</strong>
+        (or an equivalent solution) can be installed to expose the complete Accounting menus.
+    </p>
+
+    <h3>Dependencies</h3>
+
+    <p>Only the standard Odoo module:</p>
+
+    <ul>
+        <li><strong>account</strong></li>
+    </ul>
+
+    <p>is required.</p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Why GICA SEPA Payment?</h2>
+
+    <ul>
+        <li>Cash-oriented supplier payment preparation</li>
+        <li>Payment envelopes</li>
+        <li>Partial payments</li>
+        <li>Litigation management</li>
+        <li>Credit notes</li>
+        <li>Supplier advances</li>
+        <li>Standard SEPA Credit Transfer (pain.001.001.03)</li>
+        <li>One accounting entry per payment batch</li>
+        <li>Standard Odoo reconciliation</li>
+        <li>Complete workflow tracking</li>
+        <li>Full audit trail</li>
+    </ul>
+</section>
+
+</body>
+</html>
