@@ -2,11 +2,11 @@
 
 Supplier payment preparation and SEPA Credit Transfer management for Odoo.
 
-Prepare, review and prioritise supplier payments according to your available cash before generating a standard SEPA Credit Transfer file.
+Prepare, review and prioritise supplier payments based on your available cash before generating a standard SEPA Credit Transfer file.
 
 Designed for organisations that want to optimise cash flow while keeping full control over supplier payments.
 
-![Cover](00_overview.png)
+![Overview](00_overview.png)
 
 ---
 
@@ -115,8 +115,9 @@ The accounting entry remains fully linked to its originating payment envelope, e
 
 Reconciliation relies entirely on the standard Odoo accounting mechanism.
 
-No parallel accounting.
-No proprietary reconciliation process.
+**No parallel accounting.**
+
+**No proprietary reconciliation process.**
 
 ---
 
@@ -161,9 +162,9 @@ is required.
 - Cash-oriented supplier payment preparation
 - Payment envelopes
 - Partial payments
+- Litigation management
 - Credit notes
 - Supplier advances
-- Litigation management
 - Standard SEPA Credit Transfer (pain.001.001.03)
 - One accounting entry per payment batch
 - Standard Odoo reconciliation
