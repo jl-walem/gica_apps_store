@@ -1,187 +1,283 @@
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h1>GICA Peppol</h1>
-        <h2>Peppol integration for Odoo 17 Community</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GICA Peppol</title>
+</head>
+<body>
 
-        <p>
-            GICA Peppol connects Odoo with external Peppol services operated by Cyber-Relais.
-        </p>
+<section>
+    <h1>GICA Peppol</h1>
 
-        <p>
-            The module supports both outbound and inbound Peppol document processing.
-        </p>
-    </div>
+    <p><strong>Peppol document exchange for Odoo.</strong></p>
+
+    <p>
+        Send and receive electronic invoices through the Peppol network while keeping
+        the complete process integrated with standard Odoo Accounting.
+    </p>
+
+    <p>
+        Designed for organisations that want to automate inbound and outbound invoice
+        exchange while retaining full control over documents, processing status and
+        accounting validation.
+    </p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Outbound Peppol Sales</h2>
+<hr>
 
-        <ul>
-            <li>Create Peppol sales records from posted invoices</li>
-            <li>Generate UBL BIS 3.0 XML</li>
-            <li>Generate or reuse PDF attachments</li>
-            <li>Send documents through SFTP</li>
-            <li>Track transmission status</li>
-            <li>Multi-company support</li>
-        </ul>
-    </div>
+<section>
+    <h2>Outbound Peppol sales</h2>
+
+    <p>
+        GICA Peppol creates outbound Peppol documents from posted customer invoices
+        and prepares everything required for electronic delivery.
+    </p>
+
+    <ul>
+        <li>create Peppol sales records from posted invoices;</li>
+        <li>generate UBL BIS 3.0 XML documents;</li>
+        <li>generate or reuse invoice PDF attachments;</li>
+        <li>send documents through the configured connectivity service;</li>
+        <li>track transmission status;</li>
+        <li>support multi-company environments.</li>
+    </ul>
+
+    <h3>Outbound Peppol sales overview</h3>
+
+    <p>
+        Review outbound Peppol sales documents together with customer, amount,
+        processing status and transmission information.
+    </p>
+
+    <p><img src="GICA_Peppol_1.png" alt="Outbound Peppol sales overview"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
+
+    <h3>Outbound Peppol sale detail</h3>
+
+    <p>
+        Access the originating invoice, generated XML and PDF attachments, customer
+        information and document delivery status from one view.
+    </p>
+
+    <p><img src="GICA_Peppol_2.png" alt="Outbound Peppol sale detail"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
+
+    <h3>Send selected documents</h3>
+
+    <p>
+        Send several outbound Peppol documents in one operation while keeping each
+        document individually traceable.
+    </p>
+
+    <p><img src="GICA_Peppol_3.png" alt="Send selected Peppol documents"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Inbound Peppol Purchases</h2>
+<hr>
 
-        <ul>
-            <li>Receive vendor invoices through API</li>
-            <li>Store XML, PDF and HTML attachments</li>
-            <li>Create Peppol purchase records</li>
-            <li>Import UBL documents into vendor bills</li>
-            <li>Individual or batch import</li>
-            <li>Vendor bills remain in draft for review</li>
-        </ul>
-    </div>
+<section>
+    <h2>Company-level configuration</h2>
+
+    <p>
+        Configure Peppol document generation and connectivity settings separately for
+        each Odoo company.
+    </p>
+
+    <p><img src="GICA_Peppol_4.png" alt="Company Peppol settings"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Architecture</h2>
+<hr>
 
-        <pre>
-Outbound:
-Odoo -> UBL/PDF -> Cyber-Relais -> Peppol
+<section>
+    <h2>Inbound Peppol purchases</h2>
 
-Inbound:
-Peppol -> Cyber-Relais -> Odoo API -> Vendor Bill Draft
-        </pre>
-    </div>
+    <p>
+        Receive supplier invoices from an external Peppol service and prepare them
+        for controlled import into Odoo.
+    </p>
+
+    <ul>
+        <li>receive vendor invoices through the module API;</li>
+        <li>store XML, PDF and HTML attachments;</li>
+        <li>create inbound Peppol purchase records;</li>
+        <li>import UBL documents into draft vendor bills;</li>
+        <li>process documents individually or in batches;</li>
+        <li>keep generated vendor bills in draft for accounting review.</li>
+    </ul>
+
+    <h3>Inbound Peppol purchases overview</h3>
+
+    <p>
+        Review received Peppol purchase documents before importing them into Odoo
+        Accounting.
+    </p>
+
+    <p><img src="GICA_Peppol_5.png" alt="Inbound Peppol purchases overview"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
+
+    <h3>Received purchase document</h3>
+
+    <p>
+        Inspect the received document and its attachments before creating the vendor
+        bill.
+    </p>
+
+    <p><img src="GICA_Peppol_6.png" alt="Received Peppol purchase document"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
+
+    <h3>Imported purchase document</h3>
+
+    <p>
+        Once imported, the Peppol record remains linked to the generated vendor bill
+        for complete traceability.
+    </p>
+
+    <p><img src="GICA_Peppol_7.png" alt="Imported Peppol purchase document"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
+
+    <h3>Batch import of inbound documents</h3>
+
+    <p>
+        Import several selected UBL documents into draft vendor bills in one operation.
+    </p>
+
+    <p><img src="GICA_Peppol_8.png" alt="Batch import of inbound UBL documents"
+        style="display:block; max-width:100%; height:auto; margin:24px auto;"></p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Important note</h2>
+<hr>
 
-        <p>
-            The inbound API expects a pure UBL Invoice or Credit Note document.
-        </p>
+<section>
+    <h2>Integrated document workflow</h2>
 
-        <p>
-            If a Standard Business Document (SBD) is received, the SBD envelope should be extracted by the external Peppol platform before transmission to Odoo.
-        </p>
-    </div>
+    <p>
+        GICA Peppol keeps outbound and inbound documents connected to their originating
+        Odoo accounting records.
+    </p>
+
+    <p><strong>Outbound workflow</strong></p>
+    <p>Odoo customer invoice → UBL and PDF generation → connectivity service → Peppol network</p>
+
+    <p><strong>Inbound workflow</strong></p>
+    <p>Peppol network → connectivity service → GICA Peppol API → draft vendor bill</p>
+
+    <p>
+        This approach preserves accounting control inside Odoo while delegating
+        Peppol network connectivity to an external service.
+    </p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Screenshots</h2>
+<hr>
 
-        <h3>Outbound Peppol sales overview</h3>
-        <p>
-            Overview of outbound Peppol sales documents with customer, amount, status and SFTP tracking information.
-        </p>
-        <img src="GICA_Peppol_1.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Outbound Peppol sales overview"/>
+<section>
+    <h2>Document format</h2>
 
-        <h3>Outbound Peppol sale detail</h3>
-        <p>
-            Detailed view of a Peppol sales document, including invoice reference, customer, XML/PDF attachments and transmission information.
-        </p>
-        <img src="GICA_Peppol_2.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Outbound Peppol sale detail"/>
+    <p>The inbound API expects a pure UBL Invoice or Credit Note document.</p>
 
-        <h3>Send to Cyber-Relais</h3>
-        <p>
-            Batch action used to send selected outbound Peppol documents to Cyber-Relais for document exchange.
-        </p>
-        <img src="GICA_Peppol_3.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Send to Cyber-Relais batch action"/>
-
-        <h3>Company Peppol settings</h3>
-        <p>
-            Company-level configuration for Peppol XML mode and Cyber-Relais connectivity settings.
-        </p>
-        <img src="GICA_Peppol_4.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Company Peppol settings"/>
-
-        <h3>Inbound Peppol purchases overview</h3>
-        <p>
-            Overview of received inbound Peppol purchase documents before import into Odoo vendor bills.
-        </p>
-        <img src="GICA_Peppol_5.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Inbound Peppol purchases overview"/>
-
-        <h3>Received purchase document</h3>
-        <p>
-            Detailed view of a received Peppol purchase document with the Import UBL action available.
-        </p>
-        <img src="GICA_Peppol_6.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Received Peppol purchase document"/>
-
-        <h3>Imported purchase document</h3>
-        <p>
-            Once imported, the document provides direct access to the generated vendor bill in Odoo.
-        </p>
-        <img src="GICA_Peppol_7.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Imported Peppol purchase document"/>
-
-        <h3>Batch import of inbound documents</h3>
-        <p>
-            Batch action used to import selected received UBL documents into draft vendor bills.
-        </p>
-        <img src="GICA_Peppol_8.png" style="max-width:800px; width:100%; border:1px solid #ddd;" alt="Batch import of inbound UBL documents"/>
-    </div>
+    <p>
+        If a Standard Business Document (SBD) is received, the external Peppol
+        platform must extract the UBL document from the SBD envelope before sending
+        it to Odoo.
+    </p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Cyber-Relais connectivity services</h2>
+<hr>
 
-        <p>
-            This module can be used together with Cyber-Relais connectivity services
-            for Peppol document exchange.
-        </p>
+<section>
+    <h2>Connectivity services</h2>
 
-        <p>Cyber-Relais provides:</p>
+    <p>
+        GICA Peppol exchanges documents through an external Peppol connectivity
+        service or Access Point.
+    </p>
 
-        <ul>
-            <li>Peppol connectivity</li>
-            <li>Document delivery tracking</li>
-            <li>Inbound and outbound document exchange</li>
-            <li>Integration services</li>
-        </ul>
+    <p>Eurologiciel can provide integration and connectivity services for:</p>
 
-        <p>
-            More information:
-            <a href="https://www.eurologiciel.be/odoo/" target="_blank">
-                www.eurologiciel.be/odoo/
-            </a>
-        </p>
-    </div>
+    <ul>
+        <li>Peppol document exchange;</li>
+        <li>inbound and outbound document routing;</li>
+        <li>delivery tracking;</li>
+        <li>API and SFTP integration;</li>
+        <li>custom business connectivity requirements.</li>
+    </ul>
+
+    <p>
+        More information:
+        <a href="https://www.eurologiciel.be/odoo/" target="_blank">
+            www.eurologiciel.be/odoo/
+        </a>
+    </p>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>About Cyber-Relais</h2>
+<hr>
 
-        <p>
-            Cyber-Relais is a Belgian company specialized in business connectivity solutions,
-            including Peppol integration, Odoo modules, API integration and electronic
-            document exchange.
-        </p>
+<section>
+    <h2>Languages</h2>
 
-        <p>
-            Cyber-Relais is part of the Eurologiciel group.
-        </p>
+    <p>GICA Peppol is available in:</p>
 
-        <p>
-            Contact us for further information.
-        </p>
-    </div>
+    <ul>
+        <li>English</li>
+        <li>French (Belgium)</li>
+        <li>Dutch (Belgium)</li>
+    </ul>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2>Author</h2>
+<hr>
 
-        <p>
-            Jean-Luc Walem<br/>
-            Eurologiciel<br/>
-            <a href="https://www.eurologiciel.be" target="_blank">
-                www.eurologiciel.be
-            </a>
-        </p>
-    </div>
+<section>
+    <h2>Requirements</h2>
+
+    <h3>Odoo Enterprise</h3>
+    <p>Install the complete <strong>Accounting</strong> application.</p>
+
+    <h3>Odoo Community</h3>
+    <p>The complete Accounting interface should be available.</p>
+
+    <p>
+        If necessary, the OCA module <strong>account_usability</strong>
+        (or an equivalent solution) can be installed to expose the complete Accounting
+        menus.
+    </p>
 </section>
+
+<hr>
+
+<section>
+    <h2>Why GICA Peppol?</h2>
+
+    <ul>
+        <li>Outbound Peppol invoice generation</li>
+        <li>Inbound Peppol invoice reception</li>
+        <li>UBL BIS 3.0 document generation</li>
+        <li>XML, PDF and HTML attachment storage</li>
+        <li>Individual and batch processing</li>
+        <li>Draft vendor bills for accounting review</li>
+        <li>Complete document traceability</li>
+        <li>Multi-company support</li>
+        <li>Standard Odoo Accounting integration</li>
+        <li>External connectivity service independence</li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+    <h2>About Eurologiciel</h2>
+
+    <p>
+        Eurologiciel develops business solutions for Odoo, including GICA modules,
+        Peppol integration and accounting automation.
+    </p>
+
+    <p>
+        <a href="https://www.eurologiciel.be/odoo/" target="_blank">
+            www.eurologiciel.be/odoo/
+        </a>
+    </p>
+</section>
+
+</body>
+</html>
