@@ -147,6 +147,14 @@ The complete Accounting interface should be available.
 
 If necessary, the OCA module **account_usability** (or an equivalent solution) can be installed to expose the complete Accounting menus.
 
+## Languages
+
+Available in:
+
+- English;
+- French;
+- Dutch.
+
 ### Dependencies
 
 Only the standard Odoo module:
