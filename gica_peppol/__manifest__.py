@@ -28,6 +28,7 @@ Main features:
     'depends': [
         'account',
         'mail',
+        'gica_bank_statement',
     ],
 
     'data': [
